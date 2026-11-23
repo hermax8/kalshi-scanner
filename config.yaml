@@ -4,8 +4,8 @@
 oddspapi:
   # Budget mensuel de requêtes OddsPapi qu'on s'autorise (le scanner s'arrête avant).
   # À ajuster une fois le vrai quota connu (data/discovery/account.json).
-  monthly_request_budget: 200
-  # Slugs OddsPapi des bookmakers. À confirmer avec data/discovery/bookmakers.json.
+  monthly_request_budget: 235   # plan gratuit : 250/mois
+  # Slugs OddsPapi des bookmakers (vérifiés dans data/discovery/bookmakers.json).
   bookmakers:
     bet365: "bet365"          # compte Malte
     unibet: "unibet.fr"       # compte FR
@@ -33,19 +33,22 @@ sports:
     outcomes: [home, draw, away]
     oddspapi_market: "101"                       # Résultat du match (1N2), temps réglementaire
     oddspapi_outcomes: {"101": home, "102": draw, "103": away}
-    tournament_ids: []
+    # 17 Premier League, 7 Ligue des champions, 8 LaLiga, 23 Serie A, 35 Bundesliga, 34 Ligue 1
+    tournament_ids: [17, 7, 8, 23, 35, 34]
     kalshi_series: [KXEPLGAME, KXUCLGAME, KXLALIGAGAME, KXSERIEAGAME, KXBUNDESLIGAGAME, KXLIGUE1GAME]
   tennis:
     outcomes: [p1, p2]
-    oddspapi_market: ""                          # à remplir après la découverte
-    oddspapi_outcomes: {}
+    oddspapi_market: "121"                       # Vainqueur du match
+    oddspapi_outcomes: {"121": p1, "122": p2}
+    # Aucun match Kalshi ouvert pour l'instant (fin de saison). À remplir à la reprise (janvier).
     tournament_ids: []
     kalshi_series: [KXATPMATCH, KXWTAMATCH]
   basketball:
     outcomes: [p1, p2]
-    oddspapi_market: ""                          # vainqueur prolongations incluses, à remplir
-    oddspapi_outcomes: {}
-    tournament_ids: []
+    oddspapi_market: "111"                       # Vainqueur prolongations incluses
+    oddspapi_outcomes: {"111": p1, "112": p2}
+    # 132 NBA, 138 EuroLeague
+    tournament_ids: [132, 138]
     kalshi_series: [KXNBAGAME, KXEUROLEAGUEGAME]
 
 # Noms différents entre Kalshi et les bookmakers : "nom Kalshi": "nom bookmaker"

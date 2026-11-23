@@ -1,5 +1,13 @@
 # PROJECT_STATUS
 
+## 23/11/2026 — configuration après découverte
+- Plan OddsPapi gratuit : 250 requêtes/mois, cotes avant-match seulement ; budget scanner = 235.
+- Bookmakers confirmés : bet365, unibet.fr, winamax.fr, pokerstars.fr (tous inclus dans le plan).
+- Compétitions : foot 17/7/8/23/35/34 (marché 101), basket 132/138 (marché 111, prolongations incluses).
+- Tennis : marché 121 prêt, mais aucun match Kalshi ouvert (fin de saison) → tournament_ids vides jusqu'à la reprise.
+- Séries Kalshi vérifiées (foot + NBA + EuroLeague : matchs ouverts). KXATPMATCH/KXWTAMATCH : 0 pour l'instant.
+- account.json nettoyé (clé et e-mail retirés) ; discover.py ne les enregistre plus.
+
 ## 23/11/2026 — v1 du scanner
 **Fait**
 - Scanner (scan.py) : arbitrage Kalshi ↔ bookmakers, arbitrage interne Kalshi, value bets ; alertes Telegram dédupliquées ; historique CSV.

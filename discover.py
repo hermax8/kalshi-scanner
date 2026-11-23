@@ -50,7 +50,11 @@ def main():
         for path, name in (("/account", "account.json"), ("/sports", "sports.json"),
                            ("/bookmakers", "bookmakers.json"), ("/markets", "markets.json")):
             try:
-                save(name, op.get(path))
+                data = op.get(path)
+                if isinstance(data, dict):        # ne jamais enregistrer la clé ni l'e-mail
+                    for secret in ("api_key", "apiKey", "email"):
+                        data.pop(secret, None)
+                save(name, data)
             except Exception as e:
                 summary[f"oddspapi{path}"] = str(e)
         sports = json.loads((OUT / "sports.json").read_text()) if (OUT / "sports.json").exists() else []
