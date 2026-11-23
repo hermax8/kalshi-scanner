@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-23T20:47:43Z",
+  "time": "2026-11-23T20:49:50Z",
   "kalshi_series": {
     "KXEPLGAME": 30,
     "KXUCLGAME": 18,
@@ -56,14 +56,45 @@
     "Sabah Masazir vs Barcelona"
   ],
   "matched": 0,
-  "fixtures": 49,
+  "fixtures": 87,
   "opportunities": 0,
   "kalshi_events": 169,
   "bookmaker_this_run": "bet365",
   "tournaments_this_run": [
-    "34",
-    "132",
-    "138"
+    "17",
+    "7",
+    "8",
+    "23",
+    "35"
   ],
-  "oddspapi_used_this_month": 3
+  "fixture_sample": {
+    "fixtureId": "id1000000774166014",
+    "participant1Id": 656,
+    "participant2Id": 2058,
+    "sportId": 10,
+    "tournamentId": 7,
+    "seasonId": 140786,
+    "statusId": 0,
+    "hasOdds": true,
+    "startTime": "2026-11-24T17:45:00.000Z",
+    "trueStartTime": null,
+    "trueEndTime": null,
+    "updatedAt": "2026-11-21T23:59:31.425Z",
+    "_books": [
+      "bet365"
+    ],
+    "_markets": [
+      "102238",
+      "102222",
+      "10242",
+      "10226",
+      "10282",
+      "102242",
+      "10214",
+      "102210",
+      "102250",
+      "10228"
+    ]
+  },
+  "oddspapi_used_this_month": 4
 }
