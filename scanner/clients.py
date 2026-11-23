@@ -97,10 +97,11 @@ class OddsPapi:
             raise RuntimeError(f"OddsPapi {path} -> HTTP {r.status_code}: {r.text[:300]}")
         return r.json()
 
-    def odds_by_tournaments(self, tournament_ids: list, bookmakers: list[str]) -> list[dict]:
+    def odds_by_tournaments(self, tournament_ids: list, bookmaker: str) -> list[dict]:
+        """OddsPapi n'accepte qu'UN bookmaker par appel sur cet endpoint."""
         data = self.get("/odds-by-tournaments",
                         tournamentIds=",".join(str(t) for t in tournament_ids),
-                        bookmakers=",".join(bookmakers))
+                        bookmaker=bookmaker)
         if isinstance(data, dict):
             data = data.get("data") or data.get("fixtures") or list(data.values())
         return [d for d in data if isinstance(d, dict)]

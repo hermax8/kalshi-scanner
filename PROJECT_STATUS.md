@@ -1,5 +1,11 @@
 # PROJECT_STATUS
 
+## 23/11/2026 — rotation des bookmakers
+- OddsPapi /odds-by-tournaments n'accepte qu'UN bookmaker par appel → un bookmaker par passage, en rotation
+  (bet365 → Unibet → Winamax → PokerStars). 6 passages/jour = 1 requête chacun ; chaque bookmaker revu ~1,5 fois/jour.
+- Conséquence : on compare Kalshi à un bookmaker à la fois ; les surebets entre bookmakers ne sont plus cherchées
+  (rares en France de toute façon). Plan payant nécessaire pour tout scanner à chaque passage.
+
 ## 23/11/2026 — configuration après découverte
 - Plan OddsPapi gratuit : 250 requêtes/mois, cotes avant-match seulement ; budget scanner = 235.
 - Bookmakers confirmés : bet365, unibet.fr, winamax.fr, pokerstars.fr (tous inclus dans le plan).

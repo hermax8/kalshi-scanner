@@ -177,11 +177,18 @@ def main(dry_run: bool = False):
     tid_sport = {str(t): s for s, sc in cfg["sports"].items() if sc.get("oddspapi_market")
                  for t in sc.get("tournament_ids", [])}
     key = os.environ.get("ODDSPAPI_API_KEY")
+    active_books = {}
     if tid_sport and key:
         op_state = state.setdefault("oddspapi", {})
         op = OddsPapi(key, op_state, cfg["oddspapi"]["monthly_request_budget"])
+        # Un seul bookmaker par appel (limite OddsPapi) : on tourne d'un passage à l'autre
+        nicks = list(cfg["oddspapi"]["bookmakers"])
+        idx = state.get("rotation", 0) % len(nicks)
+        active_books = {nicks[idx]: cfg["oddspapi"]["bookmakers"][nicks[idx]]}
+        state["rotation"] = idx + 1
+        log["bookmaker_this_run"] = nicks[idx]
         try:
-            raw = op.odds_by_tournaments(list(tid_sport), list(cfg["oddspapi"]["bookmakers"].values()))
+            raw = op.odds_by_tournaments(list(tid_sport), active_books[nicks[idx]])
             for fx in parse_fixtures(raw):
                 s = tid_sport.get(str(fx.get("tournamentId")))
                 if s:
@@ -215,7 +222,7 @@ def main(dry_run: bool = False):
         book_odds = {}
         if fx_match:
             log["matched"] += 1
-            b_opts, book_odds = book_options(fx_match[0], scfg, cfg["oddspapi"]["bookmakers"], names_by_role)
+            b_opts, book_odds = book_options(fx_match[0], scfg, active_books, names_by_role)
             opts += b_opts
 
         arb = best_cover(outcomes, opts)
