@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-23T13:47:42Z",
+  "time": "2026-11-23T20:45:29Z",
   "kalshi_series": {
     "KXEPLGAME": 30,
     "KXUCLGAME": 18,
@@ -13,12 +13,13 @@
     "KXEUROLEAGUEGAME": 10
   },
   "errors": [
-    "OddsPapi: OddsPapi /odds-by-tournaments -> HTTP 400: {\"error\":{\"message\":\"Invalid number of bookmakers specified.\",\"code\":\"INVALID_PARAMETER\",\"details\":\"Please provide exactly one bookmaker using the 'bookmaker' query parameter.\"}}"
+    "OddsPapi: OddsPapi /odds-by-tournaments -> HTTP 400: {\"error\":{\"message\":\"Too many tournament IDs specified.\",\"code\":\"INVALID_PARAMETER\",\"details\":\"Please provide a maximum of 5 tournament IDs using the 'tournamentIds' query parameter.\"}}"
   ],
   "unmatched": [],
   "matched": 0,
   "fixtures": 0,
   "opportunities": 0,
   "kalshi_events": 169,
-  "oddspapi_used_this_month": 1
+  "bookmaker_this_run": "bet365",
+  "oddspapi_used_this_month": 2
 }
