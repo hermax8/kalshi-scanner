@@ -131,9 +131,13 @@ def send_telegram(text: str) -> bool:
     if not token or not chat:
         print("[telegram] secrets absents, message non envoyé")
         return False
-    r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                      json={"chat_id": chat, "text": text, "parse_mode": "HTML",
-                            "disable_web_page_preview": True}, timeout=TIMEOUT)
+    try:
+        r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                          json={"chat_id": chat, "text": text, "parse_mode": "HTML",
+                                "disable_web_page_preview": True}, timeout=TIMEOUT)
+    except requests.RequestException as e:      # un souci Telegram ne doit jamais casser le scan
+        print(f"[telegram] échec d'envoi : {e}")
+        return False
     if r.status_code != 200:
         print(f"[telegram] erreur {r.status_code}: {r.text[:200]}")
     return r.status_code == 200

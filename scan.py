@@ -77,6 +77,7 @@ def kalshi_events(k: Kalshi, sport: str, cfg: dict, log: dict) -> list[dict]:
 def kalshi_options(ev: dict, role_of: dict, outcomes: list, kcfg: dict):
     """Options Kalshi (OUI/NON) qui passent le filtre de liquidité, + milieux de fourchette."""
     opts, mids = [], {}
+    bids = {}
     for key, m in ev["markets"].items():
         role = role_of[key]
         q = Kalshi.quote(m)
@@ -85,6 +86,7 @@ def kalshi_options(ev: dict, role_of: dict, outcomes: list, kcfg: dict):
         if q["yes_ask"] - q["yes_bid"] > kcfg["max_spread"]:
             continue
         mids[role] = (q["yes_bid"] + q["yes_ask"]) / 2
+        bids[role] = q["yes_bid"]
         name = m.get("yes_sub_title") or role
         if q["yes_ask_size"] >= kcfg["min_ask_size"] and 0 < q["yes_ask"] < 1:
             p = q["yes_ask"]
@@ -96,7 +98,7 @@ def kalshi_options(ev: dict, role_of: dict, outcomes: list, kcfg: dict):
                                "kalshi", f"Kalshi NON « {name} » à {p:.2f} $", p))
     if set(mids) != set(outcomes):
         mids = {}
-    return opts, mids
+    return opts, mids, bids
 
 
 # ------------------------------------------------------------------ OddsPapi
@@ -180,6 +182,7 @@ def fmt_value(ev, vb, names_by_role):
             f"{ev['title']}\n"
             f"• {vb['bookmaker']} « {names_by_role[vb['outcome']]} » @ {vb['odds']:.2f}\n"
             f"Cote juste selon Kalshi : {vb['fair_odds']:.2f} (proba {vb['fair_prob']*100:.0f} %)\n"
+            f"Scénario prudent (prix acheteur Kalshi) : +{vb.get('bid_ev', 0)*100:.1f} %\n"
             f"Pas un gain garanti : avantage statistique seulement.")
 
 
@@ -261,7 +264,7 @@ def main(dry_run: bool = False):
         role_of = {"A": second if swapped else first, "B": first if swapped else second, "draw": "draw"}
         names_by_role = {role_of["A"]: ev["names"][0], role_of["B"]: ev["names"][1], "draw": "Nul"}
 
-        opts, mids = kalshi_options(ev, role_of, outcomes, kcfg)
+        opts, mids, bids = kalshi_options(ev, role_of, outcomes, kcfg)
         book_odds = {}
         if fx_match:
             log["matched"] += 1
@@ -290,6 +293,12 @@ def main(dry_run: bool = False):
                                          "bet": f"{vb['bookmaker']} {names_by_role[vb['outcome']]} @ {vb['odds']:.2f}",
                                          "fair_odds": round(vb["fair_odds"], 2)}
             for vb in value_bets(fair, book_odds, th["min_value_ev"]):
+                # Filtre prudent : la cote doit rester rentable même au prix ACHETEUR de Kalshi (bid),
+                # et on écarte les gros outsiders où 1 ¢ d'écart change tout.
+                bid = bids.get(vb["outcome"]) or 0
+                if vb["odds"] > th.get("max_value_odds", 8.0) or vb["odds"] * bid < 1.0:
+                    continue
+                vb["bid_ev"] = vb["odds"] * bid - 1.0
                 rows.append([now_iso(), "value", ev["sport"], ev["title"],
                              f"{vb['bookmaker']} {names_by_role[vb['outcome']]} @ {vb['odds']:.2f} "
                              f"(juste {vb['fair_odds']:.2f})", f"{vb['ev']:.4f}"])
@@ -312,12 +321,12 @@ def main(dry_run: bool = False):
         if new:
             w.writerow(["time_utc", "type", "sport", "match", "details", "margin_or_ev"])
         w.writerows(rows)
-    for a in alerts[:10]:            # pas plus de 10 messages par passage
-        send_telegram(a)
-    # ménage des vieilles alertes (> 3 jours)
+    # ménage des vieilles alertes (> 3 jours), puis sauvegarde AVANT les envois
     state["alerts"] = {k2: v for k2, v in state.get("alerts", {}).items() if time.time() - v[0] < 3 * 86400}
     STATE_FILE.write_text(json.dumps(state, indent=1))
     (DATA / "last_scan.json").write_text(json.dumps(log, indent=2, ensure_ascii=False, default=str))
+    for a in alerts[:10]:            # pas plus de 10 messages par passage
+        send_telegram(a)
 
 
 if __name__ == "__main__":
