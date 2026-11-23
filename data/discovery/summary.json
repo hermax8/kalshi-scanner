@@ -1,0 +1,19 @@
+{
+ "kalshi_configured_series_open_events": {
+  "KXEPLGAME": 30,
+  "KXUCLGAME": 18,
+  "KXLALIGAGAME": 23,
+  "KXSERIEAGAME": 21,
+  "KXBUNDESLIGAGAME": 18,
+  "KXLIGUE1GAME": 18,
+  "KXATPMATCH": 0,
+  "KXWTAMATCH": 0,
+  "KXNBAGAME": 31,
+  "KXEUROLEAGUEGAME": 10
+ },
+ "soccer_sportId": 10,
+ "tennis_sportId": 12,
+ "basketball_sportId": 11,
+ "oddspapi_requests_used": 7,
+ "time": "2026-11-23T13:43:27Z"
+}

@@ -1,0 +1,1714 @@
+[
+ {
+  "ticker": "KX1HOMEGAME",
+  "title": "First Home Game Opponent"
+ },
+ {
+  "ticker": "KX1STHOMEGAME",
+  "title": "First Home Game Opponent"
+ },
+ {
+  "ticker": "KXABA2GAME",
+  "title": "Europe Adriatic League 2 Game"
+ },
+ {
+  "ticker": "KXABAGAME",
+  "title": "Adriatic ABA Game"
+ },
+ {
+  "ticker": "KXABLGAME",
+  "title": "Australian Baseball League (ABL)"
+ },
+ {
+  "ticker": "KXACBGAME",
+  "title": "Spain Liga ACB Game"
+ },
+ {
+  "ticker": "KXAFCACGAME",
+  "title": "AFC Asia Cup Game"
+ },
+ {
+  "ticker": "KXAFCCL2GAME",
+  "title": "AFC Champions League Two Game"
+ },
+ {
+  "ticker": "KXAFCCLGAME",
+  "title": "AFC Champions League Game"
+ },
+ {
+  "ticker": "KXAFCONGAME",
+  "title": "AFCON Game Winner"
+ },
+ {
+  "ticker": "KXAFLGAME",
+  "title": "AFL Game"
+ },
+ {
+  "ticker": "KXAHLGAME",
+  "title": "AHL Game"
+ },
+ {
+  "ticker": "KXALEAGUEGAME",
+  "title": "Australian A League Game"
+ },
+ {
+  "ticker": "KXALEAGUEWGAME",
+  "title": "Australia A League Women Game"
+ },
+ {
+  "ticker": "KXALLSVENSKANGAME",
+  "title": "Allsvenskan Game"
+ },
+ {
+  "ticker": "KXAPBNGAME",
+  "title": "Nicaraguan Winter League (APBN)"
+ },
+ {
+  "ticker": "KXAPFDDHGAME",
+  "title": "APF Division de Honor Game"
+ },
+ {
+  "ticker": "KXARGCUPGAME",
+  "title": "Argentina Cup Game"
+ },
+ {
+  "ticker": "KXARGLNBGAME",
+  "title": "Liga Nacional de Basquetbol Game"
+ },
+ {
+  "ticker": "KXARGNACBGAME",
+  "title": "Argentine Nacional B Game"
+ },
+ {
+  "ticker": "KXARGPREMDIVGAME",
+  "title": "Argentina Primera Division Game"
+ },
+ {
+  "ticker": "KXARGSUPERCUPGAME",
+  "title": "Argentina Super Cup Game"
+ },
+ {
+  "ticker": "KXASEANGAME",
+  "title": "ASEAN Game"
+ },
+ {
+  "ticker": "KXATPCHALLENGERMATCH",
+  "title": "Challenger ATP "
+ },
+ {
+  "ticker": "KXATPEXACTMATCH",
+  "title": "ATP Exact Match Score"
+ },
+ {
+  "ticker": "KXATPGAME",
+  "title": "ATP Tennis Winner"
+ },
+ {
+  "ticker": "KXATPMATCH",
+  "title": "ATP Tennis Match"
+ },
+ {
+  "ticker": "KXAUTBSLGAME",
+  "title": "Austria BSL Game"
+ },
+ {
+  "ticker": "KXAUTBUNDESGAME",
+  "title": "Austrian Bundesliga Game"
+ },
+ {
+  "ticker": "KXBALGAME",
+  "title": "Basketball Africa League Game"
+ },
+ {
+  "ticker": "KXBALLERLEAGUEGAME",
+  "title": "Baller League Game"
+ },
+ {
+  "ticker": "KXBAREKNUCKLEMATCH",
+  "title": "Bare Knuckle Fight Match"
+ },
+ {
+  "ticker": "KXBBINTLGAME",
+  "title": "International Friendly Game"
+ },
+ {
+  "ticker": "KXBBLGAME",
+  "title": "Bundesliga Basketball Game"
+ },
+ {
+  "ticker": "KXBBSERIEA2GAME",
+  "title": "Italy Serie A2 Game"
+ },
+ {
+  "ticker": "KXBBSERIEAGAME",
+  "title": "Italy Serie A Game"
+ },
+ {
+  "ticker": "KXBBSERIEBGAME",
+  "title": "Italy Serie B Basketball Game"
+ },
+ {
+  "ticker": "KXBBWSERIEAGAME",
+  "title": "Italy Serie A (W) Game"
+ },
+ {
+  "ticker": "KXBELCHALLGAME",
+  "title": "Belgium Challenger Pro League Game"
+ },
+ {
+  "ticker": "KXBELGIANPLGAME",
+  "title": "Belgian Pro League Game"
+ },
+ {
+  "ticker": "KXBIG3GAME",
+  "title": "Big 3 Basketball Game"
+ },
+ {
+  "ticker": "KXBIHD1GAME",
+  "title": "Bosnia Division I Game"
+ },
+ {
+  "ticker": "KXBILGAME",
+  "title": "Ball is Life Basketball Game"
+ },
+ {
+  "ticker": "KXBLEAGUEONEGAME",
+  "title": "Japan B.League One Game"
+ },
+ {
+  "ticker": "KXBNXTDGAME",
+  "title": "BNXT Dutch League Game"
+ },
+ {
+  "ticker": "KXBNXTGAME",
+  "title": "BNXT League Game"
+ },
+ {
+  "ticker": "KXBOLPDIVGAME",
+  "title": "Bolivia Premier Division Game"
+ },
+ {
+  "ticker": "KXBOTOLAGAME",
+  "title": "Morocco Botola Pro Game"
+ },
+ {
+  "ticker": "KXBRASILEIROBGAME",
+  "title": "Brasileiro Serie B Game"
+ },
+ {
+  "ticker": "KXBRASILEIROCGAME",
+  "title": "Brasileiro Serie C Game"
+ },
+ {
+  "ticker": "KXBRASILEIROGAME",
+  "title": "Brasileiro Serie A Game"
+ },
+ {
+  "ticker": "KXBSLGAME",
+  "title": "Turkey BSL Game"
+ },
+ {
+  "ticker": "KXBSNFGAME",
+  "title": "Puerto Rico BSN (W) Game"
+ },
+ {
+  "ticker": "KXBSNGAME",
+  "title": "Puerto Rico BSN Basketball Game"
+ },
+ {
+  "ticker": "KXBULFLGAME",
+  "title": "Bulgaria First League Game"
+ },
+ {
+  "ticker": "KXBUNDESLIGA2GAME",
+  "title": "Bundesliga 2 Game"
+ },
+ {
+  "ticker": "KXBUNDESLIGAGAME",
+  "title": "Bundesliga Game"
+ },
+ {
+  "ticker": "KXBUNDESLIGAWGAME",
+  "title": "German Women's Bundesliga Game"
+ },
+ {
+  "ticker": "KXCAFCLWGAME",
+  "title": "CAF Champions League Women Game"
+ },
+ {
+  "ticker": "KXCANPLGAME",
+  "title": "Canadian Premier League"
+ },
+ {
+  "ticker": "KXCBAGAME",
+  "title": "Chinese Basketball Association Game "
+ },
+ {
+  "ticker": "KXCEBLGAME",
+  "title": "Canadian Elite Basketball League Game"
+ },
+ {
+  "ticker": "KXCFLGAME",
+  "title": "CFL Game"
+ },
+ {
+  "ticker": "KXCHALLENGERMATCH",
+  "title": "Challenger ATP "
+ },
+ {
+  "ticker": "KXCHESSGAME",
+  "title": "Freestyle Chess"
+ },
+ {
+  "ticker": "KXCHESSMATCH",
+  "title": "Chess Match"
+ },
+ {
+  "ticker": "KXCHLLDPGAME",
+  "title": "Chile Liga de Primera Game"
+ },
+ {
+  "ticker": "KXCHNL1GAME",
+  "title": "China League 1 Game"
+ },
+ {
+  "ticker": "KXCHNSLGAME",
+  "title": "Chinese Super League Game"
+ },
+ {
+  "ticker": "KXCHSBLGAME",
+  "title": "Switzerland SBL Game"
+ },
+ {
+  "ticker": "KXCLUBFGAME",
+  "title": "Club Friendlies"
+ },
+ {
+  "ticker": "KXCLUBWCGAME",
+  "title": "Club World Club Game"
+ },
+ {
+  "ticker": "KXCODGAME",
+  "title": "Call of Duty Games"
+ },
+ {
+  "ticker": "KXCOLCUPGAME",
+  "title": "Colombia Cup Game"
+ },
+ {
+  "ticker": "KXCONCACAFCCUPGAME",
+  "title": "CONCACAF Champions Cup Game"
+ },
+ {
+  "ticker": "KXCONCACAFNLGAME",
+  "title": "CONCACAF Nations League Game"
+ },
+ {
+  "ticker": "KXCONMEBOLLIBGAME",
+  "title": "CONMEBOL Libertadores Game"
+ },
+ {
+  "ticker": "KXCONMEBOLSUDGAME",
+  "title": "CONMEBOL Sudamericana Game"
+ },
+ {
+  "ticker": "KXCOPADELREYGAME",
+  "title": "Copa Del Rey Game"
+ },
+ {
+  "ticker": "KXCOPADOBRASILGAME",
+  "title": "Copa do Brasil Game"
+ },
+ {
+  "ticker": "KXCOPADOBRASILWGAME",
+  "title": "Copa do Brasil Women Game"
+ },
+ {
+  "ticker": "KXCOPPAITALIAGAME",
+  "title": "Coppa Italia Game"
+ },
+ {
+  "ticker": "KXCOUNTYCHAMPMATCH",
+  "title": "County Championship Cricket Match"
+ },
+ {
+  "ticker": "KXCOUPEDEFRANCEGAME",
+  "title": "Coupe de France Game"
+ },
+ {
+  "ticker": "KXCPLMATCH",
+  "title": "Caribbean Premier League Match"
+ },
+ {
+  "ticker": "KXCRICKETODIMATCH",
+  "title": "Cricket ODI Match"
+ },
+ {
+  "ticker": "KXCRICKETT20IMATCH",
+  "title": "Cricket T20I Match"
+ },
+ {
+  "ticker": "KXCRICKETTESTMATCH",
+  "title": "Cricket Test Match"
+ },
+ {
+  "ticker": "KXCRICKETWOMENODIMATCH",
+  "title": "Cricket Women ODI Match"
+ },
+ {
+  "ticker": "KXCRICKETWOMENT20IMATCH",
+  "title": "Cricket Women T20I Match"
+ },
+ {
+  "ticker": "KXCRICKETWOMENTESTMATCH",
+  "title": "Cricket Women Test Match"
+ },
+ {
+  "ticker": "KXCS2GAME",
+  "title": "Counter-Strike 2 Game"
+ },
+ {
+  "ticker": "KXCSGOGAME",
+  "title": "Counter-Strike 2 Games"
+ },
+ {
+  "ticker": "KXCZEFLGAME",
+  "title": "Czech First League Game"
+ },
+ {
+  "ticker": "KXCZEFNLGAME",
+  "title": "Czech National Football League Game"
+ },
+ {
+  "ticker": "KXCZENBLGAME",
+  "title": "Czech NBL Game"
+ },
+ {
+  "ticker": "KXDANISHSUPERLIGAGAME",
+  "title": "Danish Superliga Game"
+ },
+ {
+  "ticker": "KXDARTSMATCH",
+  "title": "Darts Match"
+ },
+ {
+  "ticker": "KXDAVISCUPMATCH",
+  "title": "Davis Cup Match"
+ },
+ {
+  "ticker": "KXDBBFGAME",
+  "title": "Denmark Basketligaen Game"
+ },
+ {
+  "ticker": "KXDBBGAME",
+  "title": "Deutscher Basketball Bund (DBB) Game"
+ },
+ {
+  "ticker": "KXDBBSUPERGAME",
+  "title": "DBB Supercup Game"
+ },
+ {
+  "ticker": "KXDELGAME",
+  "title": "DEL Game"
+ },
+ {
+  "ticker": "KXDENSUPERLIGAGAME",
+  "title": "Danish Superliga Game"
+ },
+ {
+  "ticker": "KXDFBPOKALGAME",
+  "title": "DFB Pokal Game"
+ },
+ {
+  "ticker": "KXDIMAYORGAME",
+  "title": "Liga DIMAYOR Game"
+ },
+ {
+  "ticker": "KXDOTA2GAME",
+  "title": "Dota 2 Game"
+ },
+ {
+  "ticker": "KXEASLGAME",
+  "title": "East Asia Super League Game"
+ },
+ {
+  "ticker": "KXEBASKETBALLGAME",
+  "title": "eBasketball Game"
+ },
+ {
+  "ticker": "KXEBBALLGAME",
+  "title": "eBasketball Game"
+ },
+ {
+  "ticker": "KXECULPGAME",
+  "title": "Ecuador Liga Pro Game"
+ },
+ {
+  "ticker": "KXEERSTEDIVGAME",
+  "title": "Eerste Divisie Game"
+ },
+ {
+  "ticker": "KXEFLCHAMPIONSHIPGAME",
+  "title": "EFL Championship Game"
+ },
+ {
+  "ticker": "KXEFLCUPGAME",
+  "title": "EFL Cup Game"
+ },
+ {
+  "ticker": "KXEFLL1GAME",
+  "title": "EFL League One Game"
+ },
+ {
+  "ticker": "KXEFLL2GAME",
+  "title": "EFL League Two Game"
+ },
+ {
+  "ticker": "KXEFLTROPHYGAME",
+  "title": "EFL Trophy Game"
+ },
+ {
+  "ticker": "KXEFOOTBALLGAME",
+  "title": "eFootball Game"
+ },
+ {
+  "ticker": "KXEGYPLGAME",
+  "title": "Egyptian Premier League Game"
+ },
+ {
+  "ticker": "KXEKSTRAKLASAGAME",
+  "title": "Polish Ekstraklasa Game"
+ },
+ {
+  "ticker": "KXELHGAME",
+  "title": "ELH Game"
+ },
+ {
+  "ticker": "KXELITESERIENGAME",
+  "title": "Eliteserien Game"
+ },
+ {
+  "ticker": "KXENBLGAME",
+  "title": "European North Basketball League Game"
+ },
+ {
+  "ticker": "KXENGCSGAME",
+  "title": "England Community Shield"
+ },
+ {
+  "ticker": "KXENGNLGAME",
+  "title": "English National League Game"
+ },
+ {
+  "ticker": "KXENGWLEAGUECUPGAME",
+  "title": "England Women League Cup Game"
+ },
+ {
+  "ticker": "KXEPCRMATCH",
+  "title": "European Professional Club Rugby Match"
+ },
+ {
+  "ticker": "KXEPLGAME",
+  "title": "English Premier League Game"
+ },
+ {
+  "ticker": "KXEREDIVISIEGAME",
+  "title": "Eredivisie Game"
+ },
+ {
+  "ticker": "KXEREDIVISIEWGAME",
+  "title": "Eredivisie Vrouwen Game"
+ },
+ {
+  "ticker": "KXESOCCERGAME",
+  "title": "eSoccer Game"
+ },
+ {
+  "ticker": "KXESPSUPERCUPGAME",
+  "title": "Spain Super Cup Game"
+ },
+ {
+  "ticker": "KXETTANGAME",
+  "title": "Ettan Game"
+ },
+ {
+  "ticker": "KXEUCHLGAME",
+  "title": "Champions League Hockey"
+ },
+ {
+  "ticker": "KXEUROBASKETGAME",
+  "title": "EuroBasket Game"
+ },
+ {
+  "ticker": "KXEUROCUPGAME",
+  "title": "EuroCup Basketball Game"
+ },
+ {
+  "ticker": "KXEUROLEAGUEGAME",
+  "title": "Euroleague Game"
+ },
+ {
+  "ticker": "KXEWSLGAME",
+  "title": "England Women's Super League Game"
+ },
+ {
+  "ticker": "KXFACUPGAME",
+  "title": "FA Cup Game"
+ },
+ {
+  "ticker": "KXFBUGAME",
+  "title": "Ukraine SuperLeague Game"
+ },
+ {
+  "ticker": "KXFIBACHAMPGAME",
+  "title": "FIBA Champions League Game"
+ },
+ {
+  "ticker": "KXFIBACHAMPLEAGUEGAME",
+  "title": "FIBA Champions League Game"
+ },
+ {
+  "ticker": "KXFIBAECUPGAME",
+  "title": "FIBA Europe Cup Game"
+ },
+ {
+  "ticker": "KXFIBAGAME",
+  "title": "FIBA Game"
+ },
+ {
+  "ticker": "KXFIFAGAME",
+  "title": "Fifa Game"
+ },
+ {
+  "ticker": "KXFIFAUSPULLGAME",
+  "title": "FIFA US pull game"
+ },
+ {
+  "ticker": "KXFIFAWGAME",
+  "title": "FIFA Women's Game"
+ },
+ {
+  "ticker": "KXFINALISSIMAGAME",
+  "title": "Finalissima"
+ },
+ {
+  "ticker": "KXFINCUPGAME",
+  "title": "Suomen Cup Game"
+ },
+ {
+  "ticker": "KXFINYLGAME",
+  "title": "Finnish Ykkosliiga Game"
+ },
+ {
+  "ticker": "KXFRA14MATCH",
+  "title": "France Top 14 Rugby Match"
+ },
+ {
+  "ticker": "KXFRAPLWGAME",
+  "title": "French Women's Première Ligue Game"
+ },
+ {
+  "ticker": "KXFRASUPERCUPGAME",
+  "title": "France Super Cup Game"
+ },
+ {
+  "ticker": "KXFROCUPGAME",
+  "title": "Faroe Islands Cup Game"
+ },
+ {
+  "ticker": "KXFROPLGAME",
+  "title": "Faroe Islands Premier League Game"
+ },
+ {
+  "ticker": "KXGBLGAME",
+  "title": "GBL Basketball Game"
+ },
+ {
+  "ticker": "KXGEOSLGAME",
+  "title": "Georgia Superleague Game"
+ },
+ {
+  "ticker": "KXGER3LGAME",
+  "title": "German 3. Liga Game"
+ },
+ {
+  "ticker": "KXGERSCGAME",
+  "title": "Germany Super Cup"
+ },
+ {
+  "ticker": "KXGRECUPGAME",
+  "title": "Greek Cup Game"
+ },
+ {
+  "ticker": "KXHNLGAME",
+  "title": "Croatia HNL Game"
+ },
+ {
+  "ticker": "KXHUNDREDMATCH",
+  "title": "The Hundred Cricket Match"
+ },
+ {
+  "ticker": "KXHUNNB1GAME",
+  "title": "Hungarian NB I Game"
+ },
+ {
+  "ticker": "KXIBPLGAME",
+  "title": "Men's Iceland Basketball Premier League Game"
+ },
+ {
+  "ticker": "KXIDNSLGAME",
+  "title": "Indonesia Super League Game"
+ },
+ {
+  "ticker": "KXIIHFGAME",
+  "title": "IIHF Game"
+ },
+ {
+  "ticker": "KXINDSLGAME",
+  "title": "Indian Super League Game"
+ },
+ {
+  "ticker": "KXINLGAME",
+  "title": "Israel National League Game"
+ },
+ {
+  "ticker": "KXINTERCONCUPGAME",
+  "title": "Intercontinental Cup Match"
+ },
+ {
+  "ticker": "KXINTLFRIENDLYGAME",
+  "title": "International Friendly Game"
+ },
+ {
+  "ticker": "KXIPLGAME",
+  "title": "Indian Premier League Cricket Game"
+ },
+ {
+  "ticker": "KXISLGAME",
+  "title": "Israel Super League Game"
+ },
+ {
+  "ticker": "KXISRNLCUPGAME",
+  "title": "National League Cup Game"
+ },
+ {
+  "ticker": "KXISRNLGAME",
+  "title": "Liga Leumit Game"
+ },
+ {
+  "ticker": "KXISRPLCUPGAME",
+  "title": "Premier League Cup Game"
+ },
+ {
+  "ticker": "KXISRPLGAME",
+  "title": "Israeli Premier League Game"
+ },
+ {
+  "ticker": "KXISRSCUPGAME",
+  "title": "State Cup Game"
+ },
+ {
+  "ticker": "KXISRSUPCUPGAME",
+  "title": "Super Cup Game"
+ },
+ {
+  "ticker": "KXITASUPERCUPGAME",
+  "title": "Italy Super Cup Game"
+ },
+ {
+  "ticker": "KXITFMATCH",
+  "title": "ITF Men's Match"
+ },
+ {
+  "ticker": "KXITFWMATCH",
+  "title": "ITF Women's Match"
+ },
+ {
+  "ticker": "KXITTFMENMATCH",
+  "title": "ITTF Table Tennis"
+ },
+ {
+  "ticker": "KXITTFWOMENMATCH",
+  "title": "ITTF Women Match"
+ },
+ {
+  "ticker": "KXJ2LEAGUEGAME",
+  "title": "Japan J2 League Game"
+ },
+ {
+  "ticker": "KXJ3LEAGUEGAME",
+  "title": "Japan J3 League Game"
+ },
+ {
+  "ticker": "KXJBLEAGUEGAME",
+  "title": "Japan B League Game"
+ },
+ {
+  "ticker": "KXJLEAGUECUPGAME",
+  "title": "Japan J League Cup Game"
+ },
+ {
+  "ticker": "KXJLEAGUEGAME",
+  "title": "Japan J League Game"
+ },
+ {
+  "ticker": "KXJUDGEMENTDAYGAME",
+  "title": "Ballislife x OTD | Judgement Day 1v1 Game"
+ },
+ {
+  "ticker": "KXK2LEAGUEGAME",
+  "title": "Korea K-League 2 Game"
+ },
+ {
+  "ticker": "KXKBLGAME",
+  "title": "Korea KBL Game"
+ },
+ {
+  "ticker": "KXKBOGAME",
+  "title": "KBO Game"
+ },
+ {
+  "ticker": "KXKHLGAME",
+  "title": "KHL Game"
+ },
+ {
+  "ticker": "KXKLEAGUEGAME",
+  "title": "Korea K League Game"
+ },
+ {
+  "ticker": "KXKLSGAME",
+  "title": "Serbia KLS Game"
+ },
+ {
+  "ticker": "KXKMLGAME",
+  "title": "Estonia KML Game"
+ },
+ {
+  "ticker": "KXKNVBCUPGAME",
+  "title": "KNVB Cup Game"
+ },
+ {
+  "ticker": "KXKORISLIIGAGAME",
+  "title": "Finland Korisliiga Game"
+ },
+ {
+  "ticker": "KXKXECULPGAME",
+  "title": "delete"
+ },
+ {
+  "ticker": "KXLALIGA2GAME",
+  "title": "LaLiga 2 Game"
+ },
+ {
+  "ticker": "KXLALIGAGAME",
+  "title": "La Liga Game"
+ },
+ {
+  "ticker": "KXLATESTGAME",
+  "title": "Latvian-Estonian Basketball League Game"
+ },
+ {
+  "ticker": "KXLAVERCUPDOUBLESMATCH",
+  "title": "Laver Cup Doubles Match"
+ },
+ {
+  "ticker": "KXLAVERCUPMATCH",
+  "title": "Laver Cup Tennis Match"
+ },
+ {
+  "ticker": "KXLAXGAME",
+  "title": "NCAA Lacrosse Game"
+ },
+ {
+  "ticker": "KXLBLBNGAME",
+  "title": "Lebanon Basketball League Game"
+ },
+ {
+  "ticker": "KXLBLGAME",
+  "title": "Latvia LBL Game"
+ },
+ {
+  "ticker": "KXLBPGAME",
+  "title": "Colombia LBP Basketball Game"
+ },
+ {
+  "ticker": "KXLBPRCGAME",
+  "title": "Puerto Rican Winter League (LBPRC)"
+ },
+ {
+  "ticker": "KXLEAGUESCUPGAME",
+  "title": "Leagues Cup Game"
+ },
+ {
+  "ticker": "KXLIDOMGAME",
+  "title": "Dominican Winter League (LIDOM)"
+ },
+ {
+  "ticker": "KXLIGAEXPGAME",
+  "title": "Liga Expansion Game"
+ },
+ {
+  "ticker": "KXLIGAFGAME",
+  "title": "Spanish Liga F Game"
+ },
+ {
+  "ticker": "KXLIGAMXGAME",
+  "title": "Liga MX Game"
+ },
+ {
+  "ticker": "KXLIGAMXWGAME",
+  "title": "Liga MX Women Game"
+ },
+ {
+  "ticker": "KXLIGAPORTUGAL2GAME",
+  "title": "Liga Portugal 2 Game"
+ },
+ {
+  "ticker": "KXLIGAPORTUGALGAME",
+  "title": "Liga Portugal Game"
+ },
+ {
+  "ticker": "KXLIGAPROMATCH",
+  "title": "Russia Liga Pro Match"
+ },
+ {
+  "ticker": "KXLIGMAGGAME",
+  "title": "Ligue Magnus Game"
+ },
+ {
+  "ticker": "KXLIGUE1GAME",
+  "title": "Ligue 1 Game"
+ },
+ {
+  "ticker": "KXLIGUE2GAME",
+  "title": "Ligue 2 Game"
+ },
+ {
+  "ticker": "KXLIIGAGAME",
+  "title": "Liiga Game"
+ },
+ {
+  "ticker": "KXLKLGAME",
+  "title": "LKL Lithuania Game"
+ },
+ {
+  "ticker": "KXLMBGAME",
+  "title": "Mexican Baseball League"
+ },
+ {
+  "ticker": "KXLMPGAME",
+  "title": "Mexican Pacific League"
+ },
+ {
+  "ticker": "KXLNBELITE2GAME",
+  "title": "LNB Elite 2 Game"
+ },
+ {
+  "ticker": "KXLNBELITEGAME",
+  "title": "LNB Elite Game"
+ },
+ {
+  "ticker": "KXLNBPGAME",
+  "title": "LNBP Basketball Game"
+ },
+ {
+  "ticker": "KXLOLGAME",
+  "title": "League of Legends Game"
+ },
+ {
+  "ticker": "KXLOLLONGGAME",
+  "title": "LOL Longest Game"
+ },
+ {
+  "ticker": "KXLOLSHORTGAME",
+  "title": "LOL Longest Game"
+ },
+ {
+  "ticker": "KXLOVBPROMATCH",
+  "title": "LOVB Pro Match"
+ },
+ {
+  "ticker": "KXLPBCGAME",
+  "title": "Colombian Winter League (LPB)"
+ },
+ {
+  "ticker": "KXLPBGAME",
+  "title": "Portugal LPB Game"
+ },
+ {
+  "ticker": "KXLPLMATCH",
+  "title": "Lanka Premier League Match"
+ },
+ {
+  "ticker": "KXLSBGAME",
+  "title": "Liga Sudamericana Game"
+ },
+ {
+  "ticker": "KXLUBGAME",
+  "title": "Uruguay LUB Basketball Game"
+ },
+ {
+  "ticker": "KXLVAVIRGAME",
+  "title": "Latvian Virsliga Game"
+ },
+ {
+  "ticker": "KXLVBPGAME",
+  "title": "Venezuelan Winter League (LVBP)"
+ },
+ {
+  "ticker": "KXMILBGAME",
+  "title": "MILB Game"
+ },
+ {
+  "ticker": "KXMIXEDDOUBLESMATCH",
+  "title": "Mixed Doubles Tennis Match"
+ },
+ {
+  "ticker": "KXMLBASGAME",
+  "title": "Professional Baseball All-Star Game"
+ },
+ {
+  "ticker": "KXMLBBGAME",
+  "title": "Mobile Legends Bang Bang Game"
+ },
+ {
+  "ticker": "KXMLBFTGAME",
+  "title": "Pro Baseball Futures Game"
+ },
+ {
+  "ticker": "KXMLBGAME",
+  "title": "Professional Baseball Game"
+ },
+ {
+  "ticker": "KXMLBSTGAME",
+  "title": "Pro Baseball Spring Training game"
+ },
+ {
+  "ticker": "KXMLSASTGAME",
+  "title": "MLS All Star Game"
+ },
+ {
+  "ticker": "KXMLSGAME",
+  "title": "Major League Soccer Game"
+ },
+ {
+  "ticker": "KXMPBLGAME",
+  "title": "Philippines Maharlika Basketball League Game"
+ },
+ {
+  "ticker": "KXMYSLGAME",
+  "title": "Malaysia Super League Game"
+ },
+ {
+  "ticker": "KXNBAALLSTARGAME",
+  "title": "NBA All-Star Game Winner"
+ },
+ {
+  "ticker": "KXNBACELEBRITYGAME",
+  "title": "Pro Basketball All-Star Celebrity Game"
+ },
+ {
+  "ticker": "KXNBAGAME",
+  "title": "NBA Game"
+ },
+ {
+  "ticker": "KXNBASUMMERGAME",
+  "title": "Pro Basketball Summer League Game"
+ },
+ {
+  "ticker": "KXNBBGAME",
+  "title": "Brazil NBB Basketball Game"
+ },
+ {
+  "ticker": "KXNBIGAME",
+  "title": "Hungary NB I. A Game"
+ },
+ {
+  "ticker": "KXNBLGAME",
+  "title": "Australia NBL Game"
+ },
+ {
+  "ticker": "KXNCAABBGAME",
+  "title": "College Baseball Game"
+ },
+ {
+  "ticker": "KXNCAABGAME",
+  "title": "College Basketball Game"
+ },
+ {
+  "ticker": "KXNCAAFBOWLGAME",
+  "title": "College Football Teams to Make a Bowl Game"
+ },
+ {
+  "ticker": "KXNCAAFCSGAME",
+  "title": "College Football FCS Game"
+ },
+ {
+  "ticker": "KXNCAAFD3GAME",
+  "title": "DIII College Football Game"
+ },
+ {
+  "ticker": "KXNCAAFGAME",
+  "title": "College Football Game"
+ },
+ {
+  "ticker": "KXNCAAHGAME",
+  "title": "College Hockey Game"
+ },
+ {
+  "ticker": "KXNCAAHOCKEYGAME",
+  "title": "College Hockey Game"
+ },
+ {
+  "ticker": "KXNCAALAXGAME",
+  "title": "College Lacrosse Game"
+ },
+ {
+  "ticker": "KXNCAAMBD3GAME",
+  "title": "Men's College Basketball D3 Game"
+ },
+ {
+  "ticker": "KXNCAAMBGAME",
+  "title": "Men's College Basketball Game"
+ },
+ {
+  "ticker": "KXNCAAMLAXGAME",
+  "title": "Men's College Lacrosse Game"
+ },
+ {
+  "ticker": "KXNCAAMSOCCERGAME",
+  "title": "College Soccer Game"
+ },
+ {
+  "ticker": "KXNCAASBGAME",
+  "title": "College Softball Game"
+ },
+ {
+  "ticker": "KXNCAAWBGAME",
+  "title": "Women's College Basketball Game"
+ },
+ {
+  "ticker": "KXNCAAWVMATCH",
+  "title": "Women's College Volleyball Match"
+ },
+ {
+  "ticker": "KXNFLCELEBRITYGAME",
+  "title": "Pro Football Celebrity Flag Football Game"
+ },
+ {
+  "ticker": "KXNFLGAME",
+  "title": "NFL Game"
+ },
+ {
+  "ticker": "KXNHLGAME",
+  "title": "NHL Game"
+ },
+ {
+  "ticker": "KXNKLGAME",
+  "title": "Lithuania NKL Game"
+ },
+ {
+  "ticker": "KXNLGAME",
+  "title": "National League Game"
+ },
+ {
+  "ticker": "KXNLLGAME",
+  "title": "National Lacrosse League Game"
+ },
+ {
+  "ticker": "KXNM1GAME",
+  "title": "France National Division 1 Game"
+ },
+ {
+  "ticker": "KXNOR1DIVGAME",
+  "title": "Norway OBOS-ligaen Game"
+ },
+ {
+  "ticker": "KXNPBGAME",
+  "title": "Japan NPB Game"
+ },
+ {
+  "ticker": "KXNWSLGAME",
+  "title": "NWSL Game"
+ },
+ {
+  "ticker": "KXNZNBLGAME",
+  "title": "New Zealand NBL Game"
+ },
+ {
+  "ticker": "KXODIMATCH",
+  "title": "Men's ODI Cricket Match"
+ },
+ {
+  "ticker": "KXOWGAME",
+  "title": "Overwatch Game"
+ },
+ {
+  "ticker": "KXPBAGAME",
+  "title": "Philippines PBA Game"
+ },
+ {
+  "ticker": "KXPERLEAGUECUPGAME",
+  "title": "Peru League Cup Game"
+ },
+ {
+  "ticker": "KXPERLIGA1GAME",
+  "title": "Peru Liga 1 Game"
+ },
+ {
+  "ticker": "KXPGARYDERMATCH",
+  "title": "PGA Ryder Cup Matchups"
+ },
+ {
+  "ticker": "KXPHKLGAME",
+  "title": "Croatia Premijer Liga Game"
+ },
+ {
+  "ticker": "KXPHLGAME",
+  "title": "Polish Hockey Game"
+ },
+ {
+  "ticker": "KXPICKLEBALLMATCH",
+  "title": "Pickleball Match"
+ },
+ {
+  "ticker": "KXPLEAGUEGAME",
+  "title": "Taiwan P. League+"
+ },
+ {
+  "ticker": "KXPLKGAME",
+  "title": "Poland PLK Game"
+ },
+ {
+  "ticker": "KXPLLGAME",
+  "title": "PLL Game"
+ },
+ {
+  "ticker": "KXPOWERSLAPMATCH",
+  "title": "Powerslap Match Winner"
+ },
+ {
+  "ticker": "KXPPLMATCH",
+  "title": "Padel Match"
+ },
+ {
+  "ticker": "KXPPLWMATCH",
+  "title": "Women's PPL Match"
+ },
+ {
+  "ticker": "KXPREMMATCH",
+  "title": "PREM Rugby Match"
+ },
+ {
+  "ticker": "KXPRESCUPMATCH",
+  "title": "Presidents Cup Match Winner"
+ },
+ {
+  "ticker": "KXPRYCUPGAME",
+  "title": "Paraguay Cup Game"
+ },
+ {
+  "ticker": "KXPRYLIGA1GAME",
+  "title": "delete"
+ },
+ {
+  "ticker": "KXPSLGAME",
+  "title": "Pakistan Super League Cricket Game"
+ },
+ {
+  "ticker": "KXQSTARSGAME",
+  "title": "Qatar Stars League"
+ },
+ {
+  "ticker": "KXR6GAME",
+  "title": "R6 Game"
+ },
+ {
+  "ticker": "KXRAFMATCH",
+  "title": "RAF Match Result"
+ },
+ {
+  "ticker": "KXRLGAME",
+  "title": "Rocket League Game"
+ },
+ {
+  "ticker": "KXROCKETLEAGUEGAME",
+  "title": "Rocket League Game"
+ },
+ {
+  "ticker": "KXROML1GAME",
+  "title": "Romanian Liga I Game"
+ },
+ {
+  "ticker": "KXROMLNBMGAME",
+  "title": "Romania Division A Game"
+ },
+ {
+  "ticker": "KXRUGBYESLMATCH",
+  "title": "England Super League Rugby Match"
+ },
+ {
+  "ticker": "KXRUGBYFRA14MATCH",
+  "title": "Rugby French 14 Match"
+ },
+ {
+  "ticker": "KXRUGBYGPREMMATCH",
+  "title": "Gallagher Prem Match"
+ },
+ {
+  "ticker": "KXRUGBYMLRMATCH",
+  "title": "Major League Rugby Match"
+ },
+ {
+  "ticker": "KXRUGBYNRLMATCH",
+  "title": "Rugby NRL Match"
+ },
+ {
+  "ticker": "KXSAFFGAME",
+  "title": "SAFF Championship Game"
+ },
+ {
+  "ticker": "KXSAPSLGAME",
+  "title": "South African Premiership Game"
+ },
+ {
+  "ticker": "KXSAUDIPLGAME",
+  "title": "Saudi Pro League Game"
+ },
+ {
+  "ticker": "KXSBLGAME",
+  "title": "Slovakia SBL Game"
+ },
+ {
+  "ticker": "KXSCOCHAMPGAME",
+  "title": "Scottish Championship Game"
+ },
+ {
+  "ticker": "KXSCOCUPGAME",
+  "title": "Scottish Cup Game"
+ },
+ {
+  "ticker": "KXSCOTTISHPREMGAME",
+  "title": "Scottish Premiership Game"
+ },
+ {
+  "ticker": "KXSERIEAGAME",
+  "title": "Serie A Game"
+ },
+ {
+  "ticker": "KXSERIEAWGAME",
+  "title": "Serie A Femminile Game"
+ },
+ {
+  "ticker": "KXSERIEBGAME",
+  "title": "Serie B Game"
+ },
+ {
+  "ticker": "KXSERIECCUPGAME",
+  "title": "Coppa Italia Lega Pro Game"
+ },
+ {
+  "ticker": "KXSERIECGAME",
+  "title": "Serie C Game"
+ },
+ {
+  "ticker": "KXSERIECSCUPGAME",
+  "title": "Supercoppa di Lega Pro Game"
+ },
+ {
+  "ticker": "KXSESBLGAME",
+  "title": "Sweden SBL Game"
+ },
+ {
+  "ticker": "KXSGPPLGAME",
+  "title": "Singapore Premier League Game"
+ },
+ {
+  "ticker": "KXSHLGAME",
+  "title": "SHL Game"
+ },
+ {
+  "ticker": "KXSIXKINGSMATCH",
+  "title": "Six Kings Slam Match"
+ },
+ {
+  "ticker": "KXSIXKINGSSLAMMATCH",
+  "title": "Six Kings Slam Match"
+ },
+ {
+  "ticker": "KXSIXNATIONSMATCH",
+  "title": "Six Nations Rugby Match"
+ },
+ {
+  "ticker": "KXSKLGAME",
+  "title": "Slovenia 1. SKL Game"
+ },
+ {
+  "ticker": "KXSLBGAME",
+  "title": "England Super League Basketball Game"
+ },
+ {
+  "ticker": "KXSLGREECEGAME",
+  "title": "Super League Greece Game"
+ },
+ {
+  "ticker": "KXSOBBALLGAME",
+  "title": "Summer Olympics Men's Basketball Game"
+ },
+ {
+  "ticker": "KXSOWBBALLGAME",
+  "title": "Summer Olympics Women's Basketball Game"
+ },
+ {
+  "ticker": "KXSPBGAME",
+  "title": "Venezuela Superliga Game"
+ },
+ {
+  "ticker": "KXSQUASHMATCH",
+  "title": "Pro Squash Match"
+ },
+ {
+  "ticker": "KXSRBCUPGAME",
+  "title": "Serbian Cup Game"
+ },
+ {
+  "ticker": "KXSRBSLGAME",
+  "title": "Serbian SuperLiga Game"
+ },
+ {
+  "ticker": "KXSSHIELDMATCH",
+  "title": "Sheffield Shield Match"
+ },
+ {
+  "ticker": "KXSUPERETTANGAME",
+  "title": "Sweden Superettan Game"
+ },
+ {
+  "ticker": "KXSUPERLIGGAME",
+  "title": "Turkish Super Lig Game"
+ },
+ {
+  "ticker": "KXSVK1LGAME",
+  "title": "Slovakia Niké liga Game"
+ },
+ {
+  "ticker": "KXSVK2LGAME",
+  "title": "Slovakian 2. Liga Game"
+ },
+ {
+  "ticker": "KXSVKCUPGAME",
+  "title": "Slovakian Cup Game"
+ },
+ {
+  "ticker": "KXSVNCUPGAME",
+  "title": "Slovenian Cup Game"
+ },
+ {
+  "ticker": "KXSVNPLGAME",
+  "title": "Slovenian Prva Liga Game"
+ },
+ {
+  "ticker": "KXSWISSLEAGUEGAME",
+  "title": "Swiss Super League Game"
+ },
+ {
+  "ticker": "KXSWPLGAME",
+  "title": "Scottish Women Premier League Game"
+ },
+ {
+  "ticker": "KXT10MATCH",
+  "title": "T10 Match"
+ },
+ {
+  "ticker": "KXT20CANADAMATCH",
+  "title": "Global T20 Canada Match"
+ },
+ {
+  "ticker": "KXT20MATCH",
+  "title": "Men's T20 Cricket Match"
+ },
+ {
+  "ticker": "KXTABLETENNISMATCH",
+  "title": "Men's Table Tennis Match"
+ },
+ {
+  "ticker": "KXTACAPORTGAME",
+  "title": "Taca de Portugal Game"
+ },
+ {
+  "ticker": "KXTBLGAME",
+  "title": "Turkey TBL Game"
+ },
+ {
+  "ticker": "KXTBTGAME",
+  "title": "TBT Hoops Game"
+ },
+ {
+  "ticker": "KXTESTMATCH",
+  "title": "Men's Test Cricket Match"
+ },
+ {
+  "ticker": "KXTFF1LIGGAME",
+  "title": "TFF 1. Lig Game"
+ },
+ {
+  "ticker": "KXTGLMATCH",
+  "title": "TGL Golf Match"
+ },
+ {
+  "ticker": "KXTHAIL1GAME",
+  "title": "Thai League 1 Game"
+ },
+ {
+  "ticker": "KXTTELITEGAME",
+  "title": "TT Elite Series Table Tennis Game"
+ },
+ {
+  "ticker": "KXTTELITEMATCH",
+  "title": "TT Elite Series Match"
+ },
+ {
+  "ticker": "KXTTMATCH",
+  "title": "Men's Table Tennis Match"
+ },
+ {
+  "ticker": "KXTTSTARMATCH",
+  "title": "TT Star Series Match"
+ },
+ {
+  "ticker": "KXTWEEDEDIVGAME",
+  "title": "Tweede Divisie Game"
+ },
+ {
+  "ticker": "KXUAEPLGAME",
+  "title": "UAE Pro League"
+ },
+ {
+  "ticker": "KXUCLGAME",
+  "title": "UEFA Champions League Game"
+ },
+ {
+  "ticker": "KXUCLWGAME",
+  "title": "Champions League Women's Game"
+ },
+ {
+  "ticker": "KXUECLGAME",
+  "title": "UEFA Conference League Game"
+ },
+ {
+  "ticker": "KXUECWGAME",
+  "title": "UEFA Women Europa Cup Game"
+ },
+ {
+  "ticker": "KXUEFAGAME",
+  "title": "UEFA Soccer Games"
+ },
+ {
+  "ticker": "KXUEFANLGAME",
+  "title": "UEFA Nations League Game"
+ },
+ {
+  "ticker": "KXUEFASCGAME",
+  "title": "UEFA Super Cup"
+ },
+ {
+  "ticker": "KXUELGAME",
+  "title": "UEFA Europa League Game"
+ },
+ {
+  "ticker": "KXUFLGAME",
+  "title": "UFL Football Game"
+ },
+ {
+  "ticker": "KXUKRPLGAME",
+  "title": "Ukrainian Premier League Game"
+ },
+ {
+  "ticker": "KXUNITEDCUPMATCH",
+  "title": "United Cup Match"
+ },
+ {
+  "ticker": "KXUNRIVALEDGAME",
+  "title": "Unrivaled Basketball Game"
+ },
+ {
+  "ticker": "KXURCMATCH",
+  "title": "United Rugby Championship Match"
+ },
+ {
+  "ticker": "KXURYPDGAME",
+  "title": "Uruguay Primera Division Game"
+ },
+ {
+  "ticker": "KXUSLCUPGAME",
+  "title": "USL Cup Game"
+ },
+ {
+  "ticker": "KXUSLGAME",
+  "title": "USL Championship Game"
+ },
+ {
+  "ticker": "KXUSLL1GAME",
+  "title": "USL League One Game"
+ },
+ {
+  "ticker": "KXUSLSLWGAME",
+  "title": "USL Super League Women Game"
+ },
+ {
+  "ticker": "KXUSOPENCUPGAME",
+  "title": "US Open Cup Game"
+ },
+ {
+  "ticker": "KXVALORANTGAME",
+  "title": "Valorant game winner"
+ },
+ {
+  "ticker": "KXVBAGAME",
+  "title": "Vietnam VBA Game"
+ },
+ {
+  "ticker": "KXVENFUTVEGAME",
+  "title": "Venezuela Liga FUTVE game"
+ },
+ {
+  "ticker": "KXVLEAGUE1GAME",
+  "title": "Vietnam V-League 1 Game"
+ },
+ {
+  "ticker": "KXVOLLEYBALLMATCH",
+  "title": "Volleyball Match"
+ },
+ {
+  "ticker": "KXVTBGAME",
+  "title": "Russia VTB United Game"
+ },
+ {
+  "ticker": "KXWBCGAME",
+  "title": "World Baseball Classic Game"
+ },
+ {
+  "ticker": "KXWCBAGAME",
+  "title": "China CBA (W) Game"
+ },
+ {
+  "ticker": "KXWCGAME",
+  "title": "World Cup Game"
+ },
+ {
+  "ticker": "KXWCGOALEVERYGAME",
+  "title": "World Cup Goal in Every Game"
+ },
+ {
+  "ticker": "KXWCTEAMSINGAME",
+  "title": "World Cup Teams in Game"
+ },
+ {
+  "ticker": "KXWDBBLGAME",
+  "title": "Women's Bundesliga Basketball Game"
+ },
+ {
+  "ticker": "KXWEUROBASKETGAME",
+  "title": "EuroBasket (W) Game"
+ },
+ {
+  "ticker": "KXWEUROLEAGUEGAME",
+  "title": "EuroLeague (W) Game"
+ },
+ {
+  "ticker": "KXWFIBAGAME",
+  "title": "Women's FIBA Game"
+ },
+ {
+  "ticker": "KXWHUNDREDMATCH",
+  "title": "The Hundred Women's Cricket Match"
+ },
+ {
+  "ticker": "KXWIBPLGAME",
+  "title": "Women's Iceland Premier League Game"
+ },
+ {
+  "ticker": "KXWKBLGAME",
+  "title": "Korea KBL (W) Game"
+ },
+ {
+  "ticker": "KXWLLGAME",
+  "title": "Women's Lacrosse League Game"
+ },
+ {
+  "ticker": "KXWNBAASGAME",
+  "title": "WNBA All Star Game"
+ },
+ {
+  "ticker": "KXWNBAGAME",
+  "title": "Women's Pro Basketball Game"
+ },
+ {
+  "ticker": "KXWNBLGAME",
+  "title": "NBL Australia (W) Game"
+ },
+ {
+  "ticker": "KXWOCURLGAME",
+  "title": "Winter Olympics Curling Game"
+ },
+ {
+  "ticker": "KXWODIMATCH",
+  "title": "Women's ODI Cricket Match"
+ },
+ {
+  "ticker": "KXWPLGAME",
+  "title": "Women's Indian Premier League Cricket Game"
+ },
+ {
+  "ticker": "KXWRESTLINGMATCH",
+  "title": "Wrestling Match Winner"
+ },
+ {
+  "ticker": "KXWSBLGAME",
+  "title": "Sweden SBL Game"
+ },
+ {
+  "ticker": "KXWSESBLGAME",
+  "title": "Women's Sweden SBL Game"
+ },
+ {
+  "ticker": "KXWT10MATCH",
+  "title": "Women's T10 Match"
+ },
+ {
+  "ticker": "KXWT20MATCH",
+  "title": "Women's T20 Match"
+ },
+ {
+  "ticker": "KXWTABLETENNISMATCH",
+  "title": "Women's Table Tennis Match"
+ },
+ {
+  "ticker": "KXWTACHALLENGERMATCH",
+  "title": "Challenger WTA"
+ },
+ {
+  "ticker": "KXWTAEXACTMATCH",
+  "title": "WTA Exact Match Score"
+ },
+ {
+  "ticker": "KXWTAGAME",
+  "title": "WTA Tennis Winner"
+ },
+ {
+  "ticker": "KXWTAMATCH",
+  "title": "WTA Tennis Match"
+ },
+ {
+  "ticker": "KXWTESTMATCH",
+  "title": "Women's Test Cricket Match"
+ },
+ {
+  "ticker": "KXWTGLMATCH",
+  "title": "Womens TGL Match"
+ },
+ {
+  "ticker": "KXWTTMATCH",
+  "title": "Women's Table Tennis Match"
+ }
+]
