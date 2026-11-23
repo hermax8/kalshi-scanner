@@ -53,6 +53,17 @@ sports:
     tournament_ids: [132, 138]
     kalshi_series: [KXNBAGAME, KXEUROLEAGUEGAME]
 
+# Série Kalshi -> compétition OddsPapi (pour ne comparer que ce qui a été récupéré)
+series_tournament:
+  KXEPLGAME: 17
+  KXUCLGAME: 7
+  KXLALIGAGAME: 8
+  KXSERIEAGAME: 23
+  KXBUNDESLIGAGAME: 35
+  KXLIGUE1GAME: 34
+  KXNBAGAME: 132
+  KXEUROLEAGUEGAME: 138
+
 # Noms différents entre Kalshi et les bookmakers : "nom Kalshi": "nom bookmaker"
 aliases:
   "man city": "manchester city"

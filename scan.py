@@ -110,6 +110,32 @@ def parse_fixtures(raw: list[dict]) -> list[dict]:
     return raw
 
 
+def add_participant_names(op, raw: list[dict], log: dict, max_age_days: int = 7):
+    """OddsPapi ne renvoie que des IDs d'équipes : on complète avec /participants (cache local)."""
+    for sid in {fx.get("sportId") for fx in raw if fx.get("sportId") is not None}:
+        path = DATA / f"participants_{sid}.json"
+        cache = load_json(path, {})
+        ids = {str(fx.get(k)) for fx in raw if fx.get("sportId") == sid
+               for k in ("participant1Id", "participant2Id")}
+        stale = time.time() - cache.get("_fetched", 0) > max_age_days * 86400
+        if stale or not ids <= set(cache):
+            try:
+                data = op.get("/participants", sportId=sid)
+                if isinstance(data, list):   # format v5 éventuel
+                    data = {str(d.get("participantId")): d.get("name") for d in data}
+                cache = {str(k): v for k, v in data.items()}
+                cache["_fetched"] = time.time()
+                DATA.mkdir(exist_ok=True)
+                path.write_text(json.dumps(cache, ensure_ascii=False))
+                log.setdefault("participants_refreshed", []).append(sid)
+            except Exception as e:
+                log["errors"].append(f"participants {sid}: {e}")
+        for fx in raw:
+            if fx.get("sportId") == sid:
+                fx["participant1Name"] = cache.get(str(fx.get("participant1Id")), "")
+                fx["participant2Name"] = cache.get(str(fx.get("participant2Id")), "")
+
+
 def book_options(fx: dict, scfg: dict, books: dict, swapped_names: list):
     """Options bookmakers + dict {slug: {issue: cote}} pour la value."""
     opts, odds = [], {}
@@ -201,6 +227,7 @@ def main(dry_run: bool = False):
                 log["fixture_sample"]["_books"] = list(bo)[:5] if isinstance(bo, dict) else str(type(bo))
                 b0 = next(iter(bo.values()), {}) if isinstance(bo, dict) else {}
                 log["fixture_sample"]["_markets"] = list((b0.get("markets") or {}))[:10]
+            add_participant_names(op, raw, log)
             for fx in parse_fixtures(raw):
                 s = tid_sport.get(str(fx.get("tournamentId")))
                 if s:
@@ -215,13 +242,17 @@ def main(dry_run: bool = False):
         log["errors"].append("OddsPapi non configuré (tournament_ids vides ou clé absente) : "
                              "seuls les arbitrages internes Kalshi sont cherchés.")
 
+    series_tid = cfg.get("series_tournament") or {}
+    run_tids = {str(t) for t in log.get("tournaments_this_run", [])}
     eurusd = eur_usd()
     rows, alerts = [], []
     for ev in kevents:
         scfg = cfg["sports"][ev["sport"]]
         outcomes = scfg["outcomes"]
         fx_match = None
-        if fixtures_by_sport[ev["sport"]]:
+        ev_tid = str(series_tid.get(ev["series"], ""))
+        fetched = not ev_tid or ev_tid in run_tids
+        if fixtures_by_sport[ev["sport"]] and fetched:
             fx_match = match_fixture(ev["names"], ev["date"], fixtures_by_sport[ev["sport"]], aliases)
             if not fx_match:
                 log["unmatched"].append(ev["title"])
