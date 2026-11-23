@@ -126,18 +126,33 @@ class OddsPapi:
 
 
 # ---------------------------------------------------------------- Telegram
-def send_telegram(text: str) -> bool:
+def send_telegram(text: str, attempts: int = 6) -> bool:
+    """Envoi avec nouvelles tentatives : Telegram renvoie souvent 429 (trop de requêtes)
+    aux serveurs GitHub Actions, partagés par beaucoup d'utilisateurs."""
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat:
         print("[telegram] secrets absents, message non envoyé")
         return False
-    try:
-        r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                          json={"chat_id": chat, "text": text, "parse_mode": "HTML",
-                                "disable_web_page_preview": True}, timeout=TIMEOUT)
-    except requests.RequestException as e:      # un souci Telegram ne doit jamais casser le scan
-        print(f"[telegram] échec d'envoi : {e}")
-        return False
-    if r.status_code != 200:
+    for i in range(attempts):
+        try:
+            r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                              json={"chat_id": chat, "text": text, "parse_mode": "HTML",
+                                    "disable_web_page_preview": True}, timeout=20)
+        except requests.RequestException as e:      # un souci Telegram ne doit jamais casser le scan
+            print(f"[telegram] tentative {i+1} : {e}")
+            time.sleep(5)
+            continue
+        if r.status_code == 200:
+            return True
+        if r.status_code == 429:
+            try:
+                wait = int(r.json().get("parameters", {}).get("retry_after", 5))
+            except ValueError:
+                wait = 5
+            print(f"[telegram] 429, nouvelle tentative dans {min(wait, 40) + 1} s")
+            time.sleep(min(wait, 40) + 1)
+            continue
         print(f"[telegram] erreur {r.status_code}: {r.text[:200]}")
-    return r.status_code == 200
+        return False
+    print("[telegram] abandon après plusieurs tentatives")
+    return False
