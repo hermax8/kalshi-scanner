@@ -1,0 +1,59 @@
+# Configuration du scanner Kalshi <-> bookmakers
+# Phase 1 : AUCUNE mise. Le scanner lit, compare, enregistre et alerte.
+
+oddspapi:
+  # Budget mensuel de requêtes OddsPapi qu'on s'autorise (le scanner s'arrête avant).
+  # À ajuster une fois le vrai quota connu (data/discovery/account.json).
+  monthly_request_budget: 200
+  # Slugs OddsPapi des bookmakers. À confirmer avec data/discovery/bookmakers.json.
+  bookmakers:
+    bet365: "bet365"          # compte Malte
+    unibet: "unibet.fr"       # compte FR
+    winamax: "winamax.fr"     # compte FR
+    pokerstars: "pokerstars.fr"  # compte FR
+
+kalshi:
+  base_url: "https://api.elections.kalshi.com/trade-api/v2"
+  # Frais Kalshi (taker) ≈ fee_rate × prix × (1 − prix) par contrat
+  fee_rate: 0.07
+  # Filtre de liquidité : on ignore les marchés trop minces
+  max_spread: 0.05        # écart max achat/vente (5 ¢)
+  min_ask_size: 50        # nb mini de contrats disponibles au prix d'achat
+
+thresholds:
+  min_arb_margin: 0.005   # arbitrage : profit garanti mini (0,5 %)
+  min_value_ev: 0.03      # value : espérance mini (3 %)
+  fx_cost: 0.01           # coût estimé du change USD/EUR quand on mélange Kalshi et un bookmaker
+  realert_hours: 12       # pas de nouvelle alerte pour la même opportunité avant X h (sauf si elle s'améliore)
+
+# Une entrée par sport. tournament_ids = IDs OddsPapi (à remplir après la découverte).
+# kalshi_series = séries Kalshi des matchs (vérifiées avec data/discovery/kalshi_series.json).
+sports:
+  soccer:
+    outcomes: [home, draw, away]
+    oddspapi_market: "101"                       # Résultat du match (1N2), temps réglementaire
+    oddspapi_outcomes: {"101": home, "102": draw, "103": away}
+    tournament_ids: []
+    kalshi_series: [KXEPLGAME, KXUCLGAME, KXLALIGAGAME, KXSERIEAGAME, KXBUNDESLIGAGAME, KXLIGUE1GAME]
+  tennis:
+    outcomes: [p1, p2]
+    oddspapi_market: ""                          # à remplir après la découverte
+    oddspapi_outcomes: {}
+    tournament_ids: []
+    kalshi_series: [KXATPMATCH, KXWTAMATCH]
+  basketball:
+    outcomes: [p1, p2]
+    oddspapi_market: ""                          # vainqueur prolongations incluses, à remplir
+    oddspapi_outcomes: {}
+    tournament_ids: []
+    kalshi_series: [KXNBAGAME, KXEUROLEAGUEGAME]
+
+# Noms différents entre Kalshi et les bookmakers : "nom Kalshi": "nom bookmaker"
+aliases:
+  "man city": "manchester city"
+  "man united": "manchester united"
+  "spurs": "tottenham hotspur"
+  "wolves": "wolverhampton wanderers"
+  "psg": "paris saint germain"
+  "inter": "inter milan"
+  "atletico": "atletico madrid"
