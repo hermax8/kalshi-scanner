@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-23T20:45:29Z",
+  "time": "2026-11-23T20:47:43Z",
   "kalshi_series": {
     "KXEPLGAME": 30,
     "KXUCLGAME": 18,
@@ -12,14 +12,58 @@
     "KXNBAGAME": 31,
     "KXEUROLEAGUEGAME": 10
   },
-  "errors": [
-    "OddsPapi: OddsPapi /odds-by-tournaments -> HTTP 400: {\"error\":{\"message\":\"Too many tournament IDs specified.\",\"code\":\"INVALID_PARAMETER\",\"details\":\"Please provide a maximum of 5 tournament IDs using the 'tournamentIds' query parameter.\"}}"
+  "errors": [],
+  "unmatched": [
+    "Brentford vs Everton",
+    "Nottingham Forest vs Chelsea",
+    "Leeds United vs Coventry",
+    "Manchester United vs Brentford",
+    "Ipswich Town vs Aston Villa",
+    "Everton vs Liverpool",
+    "Brighton vs Newcastle",
+    "Crystal Palace vs Hull City",
+    "Fulham vs Bournemouth",
+    "Sunderland vs Tottenham",
+    "Arsenal vs Manchester City",
+    "Coventry vs Ipswich Town",
+    "Chelsea vs Crystal Palace",
+    "Hull City vs Nottingham Forest",
+    "Liverpool vs Sunderland",
+    "Manchester City vs Leeds United",
+    "Aston Villa vs Everton",
+    "Bournemouth vs Brighton",
+    "Brentford vs Arsenal",
+    "Tottenham vs Fulham",
+    "Chelsea vs Liverpool",
+    "Aston Villa vs Crystal Palace",
+    "Bournemouth vs Hull City",
+    "Leeds United vs Ipswich Town",
+    "Manchester United vs Coventry",
+    "Nottingham Forest vs Brighton",
+    "Brentford vs Manchester City",
+    "Everton vs Fulham",
+    "Newcastle vs Sunderland",
+    "Tottenham vs Arsenal",
+    "Bodoe/Glimt vs LASK",
+    "Galatasaray vs Aston Villa",
+    "Arsenal vs Dortmund",
+    "Como vs AEK Athens",
+    "Feyenoord vs Porto",
+    "Manchester City vs Napoli",
+    "Leipzig vs Lens",
+    "Real Madrid vs Eindhoven",
+    "Slovan Bratislava vs Real Betis",
+    "Sabah Masazir vs Barcelona"
   ],
-  "unmatched": [],
   "matched": 0,
-  "fixtures": 0,
+  "fixtures": 49,
   "opportunities": 0,
   "kalshi_events": 169,
   "bookmaker_this_run": "bet365",
-  "oddspapi_used_this_month": 2
+  "tournaments_this_run": [
+    "34",
+    "132",
+    "138"
+  ],
+  "oddspapi_used_this_month": 3
 }
