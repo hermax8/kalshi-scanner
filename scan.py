@@ -271,6 +271,9 @@ def main(dry_run: bool = False):
         arb = best_cover(outcomes, opts)
         if arb:
             margin = arb.margin - (th["fx_cost"] if arb.mixed else 0.0)
+            if fx_match and margin > log.get("best_arb", {}).get("margin", -9):
+                log["best_arb"] = {"match": ev["title"], "margin": round(margin, 4),
+                                   "legs": [l.label for l in arb.legs]}
             if margin >= th["min_arb_margin"]:
                 kind = "arb_kalshi" if all(l.source == "kalshi" for l in arb.legs) else "arb"
                 legs_txt = " | ".join(l.label for l in arb.legs)
@@ -281,6 +284,11 @@ def main(dry_run: bool = False):
 
         fair = fair_probs(mids) if mids else None
         if fair and book_odds:
+            for vb in value_bets(fair, book_odds, -1.0)[:1]:
+                if vb["ev"] > log.get("best_value", {}).get("ev", -9):
+                    log["best_value"] = {"match": ev["title"], "ev": round(vb["ev"], 4),
+                                         "bet": f"{vb['bookmaker']} {names_by_role[vb['outcome']]} @ {vb['odds']:.2f}",
+                                         "fair_odds": round(vb["fair_odds"], 2)}
             for vb in value_bets(fair, book_odds, th["min_value_ev"]):
                 rows.append([now_iso(), "value", ev["sport"], ev["title"],
                              f"{vb['bookmaker']} {names_by_role[vb['outcome']]} @ {vb['odds']:.2f} "
