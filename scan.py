@@ -181,14 +181,20 @@ def main(dry_run: bool = False):
     if tid_sport and key:
         op_state = state.setdefault("oddspapi", {})
         op = OddsPapi(key, op_state, cfg["oddspapi"]["monthly_request_budget"])
-        # Un seul bookmaker par appel (limite OddsPapi) : on tourne d'un passage à l'autre
-        nicks = list(cfg["oddspapi"]["bookmakers"])
-        idx = state.get("rotation", 0) % len(nicks)
-        active_books = {nicks[idx]: cfg["oddspapi"]["bookmakers"][nicks[idx]]}
+        # Limites OddsPapi : 1 bookmaker et 5 compétitions max par appel.
+        # Une requête par passage, en tournant sur les combinaisons (bookmaker × groupe de compétitions).
+        books = cfg["oddspapi"]["bookmakers"]
+        tids = list(tid_sport)
+        chunks = [tids[i:i + 5] for i in range(0, len(tids), 5)]
+        combos = [(nick, ch) for nick in books for ch in chunks]
+        idx = state.get("rotation", 0) % len(combos)
+        nick, chunk = combos[idx]
+        active_books = {nick: books[nick]}
         state["rotation"] = idx + 1
-        log["bookmaker_this_run"] = nicks[idx]
+        log["bookmaker_this_run"] = nick
+        log["tournaments_this_run"] = chunk
         try:
-            raw = op.odds_by_tournaments(list(tid_sport), active_books[nicks[idx]])
+            raw = op.odds_by_tournaments(chunk, books[nick])
             for fx in parse_fixtures(raw):
                 s = tid_sport.get(str(fx.get("tournamentId")))
                 if s:

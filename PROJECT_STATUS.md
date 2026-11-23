@@ -1,5 +1,10 @@
 # PROJECT_STATUS
 
+## 23/11/2026 (soir) — bet365 seul
+- 2e limite OddsPapi : 5 compétitions max par appel → 2 groupes (foot top 5 / Ligue 1 + NBA + EuroLeague).
+- Décision : bet365 seul en phase 1. 1 requête par passage, groupes en alternance : chaque match revu toutes les 8 h.
+- Les autres bookmakers sont commentés dans config.yaml (à réactiver si bet365 limite le compte).
+
 ## 23/11/2026 — rotation des bookmakers
 - OddsPapi /odds-by-tournaments n'accepte qu'UN bookmaker par appel → un bookmaker par passage, en rotation
   (bet365 → Unibet → Winamax → PokerStars). 6 passages/jour = 1 requête chacun ; chaque bookmaker revu ~1,5 fois/jour.

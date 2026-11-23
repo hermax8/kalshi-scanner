@@ -7,10 +7,12 @@ oddspapi:
   monthly_request_budget: 235   # plan gratuit : 250/mois
   # Slugs OddsPapi des bookmakers (vérifiés dans data/discovery/bookmakers.json).
   bookmakers:
+    # Phase 1 : bet365 seul (quota gratuit = 1 bookmaker par requête).
+    # Pour en réactiver un, retirer le # devant sa ligne.
     bet365: "bet365"          # compte Malte
-    unibet: "unibet.fr"       # compte FR
-    winamax: "winamax.fr"     # compte FR
-    pokerstars: "pokerstars.fr"  # compte FR
+    # unibet: "unibet.fr"       # compte FR
+    # winamax: "winamax.fr"     # compte FR
+    # pokerstars: "pokerstars.fr"  # compte FR
 
 kalshi:
   base_url: "https://api.elections.kalshi.com/trade-api/v2"
@@ -34,7 +36,7 @@ sports:
     oddspapi_market: "101"                       # Résultat du match (1N2), temps réglementaire
     oddspapi_outcomes: {"101": home, "102": draw, "103": away}
     # 17 Premier League, 7 Ligue des champions, 8 LaLiga, 23 Serie A, 35 Bundesliga, 34 Ligue 1
-    tournament_ids: [17, 7, 8, 23, 35, 34]
+    tournament_ids: [17, 7, 8, 23, 35, 34]   # (5 max par requête : le scanner les répartit en 2 groupes)
     kalshi_series: [KXEPLGAME, KXUCLGAME, KXLALIGAGAME, KXSERIEAGAME, KXBUNDESLIGAGAME, KXLIGUE1GAME]
   tennis:
     outcomes: [p1, p2]
