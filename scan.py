@@ -195,6 +195,12 @@ def main(dry_run: bool = False):
         log["tournaments_this_run"] = chunk
         try:
             raw = op.odds_by_tournaments(chunk, books[nick])
+            if raw:
+                log["fixture_sample"] = {k: v for k, v in raw[0].items() if k != "bookmakerOdds"}
+                bo = raw[0].get("bookmakerOdds") or {}
+                log["fixture_sample"]["_books"] = list(bo)[:5] if isinstance(bo, dict) else str(type(bo))
+                b0 = next(iter(bo.values()), {}) if isinstance(bo, dict) else {}
+                log["fixture_sample"]["_markets"] = list((b0.get("markets") or {}))[:10]
             for fx in parse_fixtures(raw):
                 s = tid_sport.get(str(fx.get("tournamentId")))
                 if s:
