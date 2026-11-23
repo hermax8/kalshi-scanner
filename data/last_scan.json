@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-23T20:52:10Z",
+  "time": "2026-11-23T20:58:06Z",
   "kalshi_series": {
     "KXEPLGAME": 30,
     "KXUCLGAME": 18,
@@ -14,66 +14,87 @@
   },
   "errors": [],
   "unmatched": [
-    "Toulouse vs PSG",
-    "Los Angeles C vs Houston",
-    "Detroit vs Orlando",
-    "Chicago vs Charlotte",
-    "Cleveland vs New York",
-    "Brooklyn vs Milwaukee",
-    "Los Angeles C vs Memphis",
-    "Phoenix vs Houston",
-    "Sacramento vs Golden State",
-    "Brooklyn vs Toronto",
-    "Milwaukee vs Detroit",
-    "Philadelphia vs Indiana",
-    "Atlanta vs Boston",
-    "Dallas vs Phoenix",
-    "Denver vs Utah",
-    "New Orleans vs Los Angeles C",
-    "Orlando vs Washington"
+    "Brentford vs Everton",
+    "Coventry vs Ipswich Town",
+    "Manchester City vs Leeds United",
+    "Bournemouth vs Brighton",
+    "Tottenham vs Fulham",
+    "Chelsea vs Liverpool",
+    "Aston Villa vs Crystal Palace",
+    "Bournemouth vs Hull City",
+    "Leeds United vs Ipswich Town",
+    "Manchester United vs Coventry",
+    "Nottingham Forest vs Brighton",
+    "Brentford vs Manchester City",
+    "Everton vs Fulham",
+    "Newcastle vs Sunderland",
+    "Tottenham vs Arsenal",
+    "Levante vs Elche",
+    "Monza vs Fiorentina",
+    "Bremen vs M´gladbach",
+    "FC Köln vs Elversberg",
+    "Augsburg vs FC Köln",
+    "Leverkusen vs M´gladbach",
+    "Freiburg vs Hoffenheim",
+    "Union Berlin vs Hamburg",
+    "Frankfurt vs Bremen",
+    "Schalke vs Dortmund",
+    "Elversberg vs Stuttgart"
   ],
-  "matched": 42,
-  "fixtures": 49,
-  "opportunities": 0,
+  "matched": 84,
+  "fixtures": 87,
+  "opportunities": 1,
   "kalshi_events": 169,
   "bookmaker_this_run": "bet365",
   "tournaments_this_run": [
-    "34",
-    "132",
-    "138"
+    "17",
+    "7",
+    "8",
+    "23",
+    "35"
   ],
   "fixture_sample": {
-    "fixtureId": "id1100013273719746",
-    "participant1Id": 3430,
-    "participant2Id": 3415,
-    "sportId": 11,
-    "tournamentId": 132,
-    "seasonId": 142074,
+    "fixtureId": "id1000000774166014",
+    "participant1Id": 656,
+    "participant2Id": 2058,
+    "sportId": 10,
+    "tournamentId": 7,
+    "seasonId": 140786,
     "statusId": 0,
     "hasOdds": true,
-    "startTime": "2026-11-24T00:00:00.000Z",
+    "startTime": "2026-11-24T17:45:00.000Z",
     "trueStartTime": null,
     "trueEndTime": null,
-    "updatedAt": "2026-11-23T01:55:33.337Z",
+    "updatedAt": "2026-11-21T23:59:31.425Z",
     "_books": [
       "bet365"
     ],
     "_markets": [
-      "114248",
-      "111606",
-      "114644",
-      "114624",
-      "11244",
-      "111616",
-      "111650",
-      "116012",
-      "116024",
-      "11242"
+      "10208",
+      "10272",
+      "102095",
+      "10282",
+      "1020",
+      "101919",
+      "102212",
+      "10226",
+      "102191",
+      "10258"
     ]
   },
-  "participants_refreshed": [
-    10,
-    11
-  ],
-  "oddspapi_used_this_month": 7
+  "oddspapi_used_this_month": 8,
+  "best_arb": {
+    "match": "Real Betis vs Vallecano",
+    "margin": -0.0099,
+    "legs": [
+      "Kalshi NON « Vallecano » à 0.83 $",
+      "bet365 « Vallecano » @ 6.25"
+    ]
+  },
+  "best_value": {
+    "match": "Real Betis vs Vallecano",
+    "ev": 0.0992,
+    "bet": "bet365 Vallecano @ 6.25",
+    "fair_odds": 5.69
+  }
 }
