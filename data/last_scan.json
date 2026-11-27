@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-27T14:05:21Z",
+  "time": "2026-11-27T15:01:01Z",
   "kalshi_series": {
     "KXEPLGAME": 30,
     "KXUCLGAME": 18,
@@ -14,76 +14,67 @@
   },
   "errors": [],
   "unmatched": [
-    "New Orleans vs Los Angeles C (2026-11-27) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Orlando vs Washington (2026-11-28) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Brooklyn vs Charlotte (2026-11-28) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Indiana vs Chicago (2026-11-28) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Oklahoma City vs Milwaukee (2026-11-28) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Philadelphia vs Houston (2026-11-28) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Miami vs Cleveland (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Boston vs San Antonio (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Los Angeles L vs Memphis (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Phoenix vs Utah (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Atlanta vs New York (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Denver vs Toronto (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "New Orleans vs Portland (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Orlando vs Detroit (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Los Angeles C vs Golden State (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers",
-    "Minnesota vs Sacramento (2026-11-29) ≠ New York Knicks vs Miami Heat / Toronto Raptors vs Brooklyn Nets / Indiana Pacers vs Philadelphia 76ers"
+    "Aston Villa vs Crystal Palace (2026-12-05) ≠ Villarreal CF vs Real Sociedad San Sebastian",
+    "Tottenham vs Arsenal (2026-12-06) ≠ FC Barcelona vs RC Celta de Vigo",
+    "Aston Villa vs PSG (2026-12-08) ≠ Sevilla FC vs Malaga CF",
+    "FC Köln vs Elversberg (2026-11-28) ≠ 1. FC Cologne vs SV 07 Elversberg",
+    "Augsburg vs FC Köln (2026-12-05) ≠ FC Augsburg vs 1. FC Cologne"
   ],
-  "matched": 28,
-  "fixtures": 34,
+  "matched": 78,
+  "fixtures": 80,
   "opportunities": 0,
   "kalshi_events": 167,
-  "bookmaker_this_run": "bet365",
+  "bookmaker_this_run": "unibet",
   "tournaments_this_run": [
-    "34",
-    "132",
-    "138"
+    "17",
+    "7",
+    "8",
+    "23",
+    "35"
   ],
   "fixture_sample": {
-    "fixtureId": "id1000003472036314",
-    "participant1Id": 1715,
-    "participant2Id": 6070,
+    "fixtureId": "id1000003572513342",
+    "participant1Id": 2534,
+    "participant2Id": 2527,
     "sportId": 10,
-    "tournamentId": 34,
-    "seasonId": 140780,
+    "tournamentId": 35,
+    "seasonId": 140768,
     "statusId": 0,
     "hasOdds": true,
-    "startTime": "2026-11-27T19:45:00.000Z",
+    "startTime": "2026-11-27T19:30:00.000Z",
     "trueStartTime": null,
     "trueEndTime": null,
-    "updatedAt": "2026-11-24T23:50:38.102Z",
+    "updatedAt": "2026-11-24T23:50:38.160Z",
     "_books": [
-      "bet365"
+      "unibet.fr"
     ],
     "_markets": [
-      "10242",
-      "102208",
-      "102074",
-      "10228",
-      "10248",
-      "10240",
-      "1020",
-      "10336",
-      "102161",
-      "102226"
+      "10258",
+      "102526",
+      "1010",
+      "10308",
+      "10270",
+      "10296",
+      "10226",
+      "101930",
+      "108",
+      "10140"
     ]
   },
-  "oddspapi_used_this_month": 17,
+  "oddspapi_used_this_month": 18,
   "best_arb": {
-    "match": "PSG vs Lorient",
-    "margin": -0.0205,
+    "match": "Bayern Munich vs Paderborn",
+    "margin": -0.0158,
     "legs": [
-      "Kalshi NON « Lorient » à 0.94 $",
-      "bet365 « Lorient » @ 15.00"
+      "Kalshi NON « Paderborn » à 0.96 $",
+      "Kalshi OUI « Paderborn » à 0.05 $"
     ]
   },
   "best_value": {
-    "match": "Atlanta vs Boston",
-    "ev": -0.0005,
-    "bet": "bet365 Atlanta @ 4.10",
-    "fair_odds": 4.1
+    "match": "Nottingham Forest vs Chelsea",
+    "ev": -0.0327,
+    "bet": "unibet.fr Nul @ 3.50",
+    "fair_odds": 3.62
   },
-  "sans_cotes": 11
+  "sans_cotes": 29
 }
