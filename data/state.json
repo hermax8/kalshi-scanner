@@ -1,13 +1,21 @@
 {
  "oddspapi": {
   "month": "2026-11",
-  "used": 15
+  "used": 16
  },
  "alerts": {
   "value|KXLALIGAGAME-26NOV28RBBRVC|bet365|away": [
    1795531978.2883177,
    0.125
+  ],
+  "arb|KXUCLGAME-26DEC09ARSRMA|bet365:['away']|kalshi:['draw', 'home']": [
+   1795787912.4030318,
+   0.05478923029580907
+  ],
+  "value|KXUCLGAME-26DEC09ARSRMA|bet365|away": [
+   1795787912.4030817,
+   0.27684729064039404
   ]
  },
- "rotation": 2
+ "rotation": 1
 }

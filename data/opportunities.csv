@@ -1,3 +1,5 @@
 time_utc,type,sport,match,details,margin_or_ev
 2026-11-23T20:58:08Z,value,soccer,Real Betis vs Vallecano,bet365 Vallecano @ 6.25 (juste 5.69),0.0992
 2026-11-24T14:52:58Z,value,soccer,Real Betis vs Vallecano,bet365 Vallecano @ 6.25 (juste 5.56),0.1250
+2026-11-27T13:58:32Z,arb,soccer,Arsenal vs Real Madrid,Kalshi NON « Real Madrid » à 0.61 $ | bet365 « Real Madrid » @ 3.20,0.0548
+2026-11-27T13:58:32Z,value,soccer,Arsenal vs Real Madrid,bet365 Real Madrid @ 3.20 (juste 2.51),0.2768
