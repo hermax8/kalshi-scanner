@@ -279,9 +279,12 @@ def main(dry_run: bool = False):
         if fixtures_by_sport[ev["sport"]] and fetched:
             fx_match = match_fixture(ev["names"], ev["date"], fixtures_by_sport[ev["sport"]], aliases)
             if not fx_match:
+                from scanner.matching import name_score
                 same_day = [fx for fx in fixtures_by_sport[ev["sport"]]
-                            if ev["date"] and fx.get("_date") and abs((fx["_date"] - ev["date"]).days) <= 1]
-                if same_day:   # il y a des matchs ce jour-là : probablement un nom pas reconnu
+                            if ev["date"] and fx.get("_date") and abs((fx["_date"] - ev["date"]).days) <= 1
+                            and max(name_score(n, fx.get(k, ""), aliases) for n in ev["names"]
+                                    for k in ("participant1Name", "participant2Name")) >= 0.6]
+                if same_day:   # une des deux équipes joue ce jour-là : probablement un nom pas reconnu
                     log["unmatched"].append(f"{ev['title']} ({ev['date']}) ≠ " + " / ".join(
                         f"{fx.get('participant1Name')} vs {fx.get('participant2Name')}" for fx in same_day[:3]))
                 else:          # pas encore de cotes ce jour-là (match lointain, coupe…)
