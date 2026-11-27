@@ -20,6 +20,7 @@ class Option:
     source: str        # "kalshi" ou slug bookmaker
     label: str         # ex. "OUI Everton à 0.42 $" / "Everton @ 2.40"
     price: float       # cote décimale (bookmaker) ou prix du contrat (Kalshi)
+    changed: str = ""  # bookmaker : date ISO du dernier changement de la cote (OddsPapi changedAt)
 
 
 @dataclass

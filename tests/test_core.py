@@ -100,3 +100,13 @@ def test_full_scan_dry_run(monkeypatch, capsys, tmp_path):
     # Sinner : bet365 @ 2.85 (coût 0.351) + Kalshi OUI Alcaraz 0.59+frais (0.607) = 0.958 -> ~+4,4 % -1 % change
     assert "ARBITRAGE" in out and "bet365" in out and "Kalshi OUI « Carlos Alcaraz »" in out
     assert '"matched": 1' in out
+
+
+def test_name_substring_and_no_false_match():
+    assert name_score("FC Köln", "1. FC Koln") >= 0.85
+    assert name_score("Bremen", "Werder Bremen") >= 0.85
+    assert name_score("Leeds United", "Leicester City") < 0.6
+    fx = [{"participant1Name": "Manchester United", "participant2Name": "Everton", "_date": date(2026, 11, 28)},
+          {"participant1Name": "Newcastle United", "participant2Name": "Sunderland", "_date": date(2026, 11, 28)}]
+    best = match_fixture(["Newcastle", "Sunderland"], date(2026, 11, 28), fx)
+    assert best and best[0]["participant1Name"] == "Newcastle United"

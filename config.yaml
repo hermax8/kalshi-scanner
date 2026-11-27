@@ -7,12 +7,14 @@ oddspapi:
   monthly_request_budget: 235   # plan gratuit : 250/mois
   # Slugs OddsPapi des bookmakers (vérifiés dans data/discovery/bookmakers.json).
   bookmakers:
-    # Phase 1 : bet365 seul (quota gratuit = 1 bookmaker par requête).
-    # Pour en réactiver un, retirer le # devant sa ligne.
+    # Quota gratuit = 1 bookmaker par requête : le scanner tourne d'un bookmaker à l'autre.
+    # Pour en (dés)activer un, ajouter/retirer le # devant sa ligne.
     bet365: "bet365"          # compte Malte
-    # unibet: "unibet.fr"       # compte FR
-    # winamax: "winamax.fr"     # compte FR
+    unibet: "unibet.fr"       # compte FR
+    winamax: "winamax.fr"     # compte FR
     # pokerstars: "pokerstars.fr"  # compte FR
+  # Bookmakers utilisés seulement pour les ARBITRAGES (pas d'alertes value)
+  arb_only: [unibet, winamax]
 
 kalshi:
   base_url: "https://api.elections.kalshi.com/trade-api/v2"
@@ -74,3 +76,10 @@ aliases:
   "psg": "paris saint germain"
   "inter": "inter milan"
   "atletico": "atletico madrid"
+  "m gladbach": "borussia monchengladbach"
+  "gladbach": "borussia monchengladbach"
+  "leverkusen": "bayer leverkusen"
+  "bilbao": "athletic bilbao"
+  "athletic club": "athletic bilbao"
+  "nottm forest": "nottingham forest"
+  "sheff utd": "sheffield united"

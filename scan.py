@@ -148,7 +148,8 @@ def book_options(fx: dict, scfg: dict, books: dict, swapped_names: list):
                 continue
             odds.setdefault(slug, {})[role] = o
             opts.append(Option(frozenset([role]), 1.0 / o, slug,
-                               f"{nick} « {swapped_names[role]} » @ {o:.2f}", o))
+                               f"{nick} « {swapped_names[role]} » @ {o:.2f}", o,
+                               OddsPapi.changed_at(fx, slug, scfg["oddspapi_market"], oid)))
     return opts, odds
 
 
@@ -162,6 +163,20 @@ def should_alert(state: dict, key: str, value: float, hours: float) -> bool:
     return True
 
 
+def age_txt(iso: str) -> str:
+    """'2026-11-27T10:15:00Z' -> 'cote inchangée depuis 3 h 45' (ou '' si inconnu)."""
+    try:
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        return ""
+    mins = max(0, int((datetime.now(timezone.utc) - t).total_seconds() // 60))
+    if mins < 60:
+        return f"cote inchangée depuis {mins} min"
+    if mins < 48 * 60:
+        return f"cote inchangée depuis {mins // 60} h {mins % 60:02d}"
+    return f"⚠️ cote inchangée depuis {mins // 1440} jours"
+
+
 def fmt_arb(ev, arb, margin, names_by_role, eurusd):
     lines = [f"🟢 <b>ARBITRAGE +{margin*100:.1f} %</b> ({SPORT_FR[ev['sport']]})",
              f"{ev['title']} · {ev['date']:%d/%m}" if ev["date"] else ev["title"]]
@@ -173,7 +188,8 @@ def fmt_arb(ev, arb, margin, names_by_role, eurusd):
             usd = n * leg.cost
             lines.append(f"• {leg.label} → {n:.0f} contrats (≈ {usd:.2f} $ soit {usd/eurusd:.2f} €)")
         else:
-            lines.append(f"• {leg.label} → miser {stake:.2f} €")
+            age = age_txt(leg.changed)
+            lines.append(f"• {leg.label} → miser {stake:.2f} €" + (f" ({age})" if age else ""))
     lines.append(f"Total misé : 100 € → tu encaisses ≈ {payout:.2f} € quel que soit le résultat "
                  f"(gain ≈ +{payout-total:.2f} €{', change inclus' if arb.mixed else ''}).")
     if ev["sport"] == "tennis":
@@ -263,7 +279,13 @@ def main(dry_run: bool = False):
         if fixtures_by_sport[ev["sport"]] and fetched:
             fx_match = match_fixture(ev["names"], ev["date"], fixtures_by_sport[ev["sport"]], aliases)
             if not fx_match:
-                log["unmatched"].append(ev["title"])
+                same_day = [fx for fx in fixtures_by_sport[ev["sport"]]
+                            if ev["date"] and fx.get("_date") and abs((fx["_date"] - ev["date"]).days) <= 1]
+                if same_day:   # il y a des matchs ce jour-là : probablement un nom pas reconnu
+                    log["unmatched"].append(f"{ev['title']} ({ev['date']}) ≠ " + " / ".join(
+                        f"{fx.get('participant1Name')} vs {fx.get('participant2Name')}" for fx in same_day[:3]))
+                else:          # pas encore de cotes ce jour-là (match lointain, coupe…)
+                    log["sans_cotes"] = log.get("sans_cotes", 0) + 1
         swapped = fx_match[1] if fx_match else False
         first, second = (("home", "away") if ev["sport"] == "soccer" else ("p1", "p2"))
         role_of = {"A": second if swapped else first, "B": first if swapped else second, "draw": "draw"}
@@ -297,7 +319,9 @@ def main(dry_run: bool = False):
                     log["best_value"] = {"match": ev["title"], "ev": round(vb["ev"], 4),
                                          "bet": f"{vb['bookmaker']} {names_by_role[vb['outcome']]} @ {vb['odds']:.2f}",
                                          "fair_odds": round(vb["fair_odds"], 2)}
-            for vb in value_bets(fair, book_odds, th["min_value_ev"]):
+            arb_only = {cfg["oddspapi"]["bookmakers"].get(n) for n in (cfg["oddspapi"].get("arb_only") or [])}
+            for vb in value_bets(fair, {b: o for b, o in book_odds.items() if b not in arb_only},
+                                 th["min_value_ev"]):
                 # Filtre prudent : la cote doit rester rentable même au prix ACHETEUR de Kalshi (bid),
                 # et on écarte les gros outsiders où 1 ¢ d'écart change tout.
                 bid = bids.get(vb["outcome"]) or 0

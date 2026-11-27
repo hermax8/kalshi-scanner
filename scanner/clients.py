@@ -124,6 +124,15 @@ class OddsPapi:
         p = _f(pl.get("price"))
         return p if p and p > 1.0 else None
 
+    @staticmethod
+    def changed_at(fixture: dict, slug: str, market: str, outcome: str) -> str:
+        """Date ISO du dernier changement de la cote (champ changedAt), ou ''."""
+        try:
+            pl = fixture["bookmakerOdds"][slug]["markets"][str(market)]["outcomes"][str(outcome)]["players"]["0"]
+            return str(pl.get("changedAt") or "")
+        except (KeyError, TypeError):
+            return ""
+
 
 # ---------------------------------------------------------------- Telegram
 def send_telegram(text: str, attempts: int = 6) -> bool:

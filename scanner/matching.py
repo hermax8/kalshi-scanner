@@ -42,7 +42,10 @@ def name_score(a: str, b: str, aliases: dict | None = None) -> float:
     # préfixes : "man" ~ "manchester", "atl" ~ "atletico"
     pref = sum(1 for x in ta if any(y.startswith(x) or x.startswith(y) for y in tb if min(len(x), len(y)) >= 3))
     pref_score = pref / max(len(ta), len(tb))
-    return max(ratio, jacc, 0.9 * contain, 0.85 * pref_score)
+    # mot inclus dans un autre : "gladbach" ~ "monchengladbach", "koln" ~ "1fckoln"
+    sub = sum(1 for x in ta if len(x) >= 5 and any(x in y or y in x for y in tb if len(y) >= 5))
+    sub_score = sub / min(len(ta), len(tb))
+    return max(ratio, jacc, 0.9 * contain, 0.85 * pref_score, 0.85 * sub_score)
 
 
 def kalshi_event_date(event_ticker: str):

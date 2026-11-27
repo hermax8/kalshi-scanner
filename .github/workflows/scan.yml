@@ -1,8 +1,8 @@
 name: scan
 
 on:
-  schedule:
-    - cron: "17 */4 * * *"   # toutes les 4 h (UTC)
+  # Lancé toutes les 4 h par cron-job.org (à l'heure pile). Plus d'horaire GitHub :
+  # les doublons videraient le quota OddsPapi (250 requêtes/mois).
   workflow_dispatch:
 
 permissions:
