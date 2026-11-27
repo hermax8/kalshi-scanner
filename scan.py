@@ -165,12 +165,17 @@ def should_alert(state: dict, key: str, value: float, hours: float) -> bool:
 def fmt_arb(ev, arb, margin, names_by_role, eurusd):
     lines = [f"🟢 <b>ARBITRAGE +{margin*100:.1f} %</b> ({SPORT_FR[ev['sport']]})",
              f"{ev['title']} · {ev['date']:%d/%m}" if ev["date"] else ev["title"]]
-    for leg, stake in stakes_for(arb, 100.0):
+    total = 100.0                       # mise totale visée, en €
+    payout = total / arb.total_cost     # somme encaissée quel que soit le résultat
+    for leg, stake in stakes_for(arb, payout):
         if leg.source == "kalshi":
-            lines.append(f"• {leg.label} → {stake*eurusd:.0f} contrats")
+            n = stake * eurusd                      # contrats à 1 $ chacun
+            usd = n * leg.cost
+            lines.append(f"• {leg.label} → {n:.0f} contrats (≈ {usd:.2f} $ soit {usd/eurusd:.2f} €)")
         else:
-            lines.append(f"• {leg.label} → {stake:.2f} €")
-    lines.append(f"Pour encaisser 100 € quel que soit le résultat (change {'inclus' if arb.mixed else 'sans objet'}).")
+            lines.append(f"• {leg.label} → miser {stake:.2f} €")
+    lines.append(f"Total misé : 100 € → tu encaisses ≈ {payout:.2f} € quel que soit le résultat "
+                 f"(gain ≈ +{payout-total:.2f} €{', change inclus' if arb.mixed else ''}).")
     if ev["sport"] == "tennis":
         lines.append("⚠️ Règles d'abandon différentes selon les sites : vérifie avant.")
     lines.append("⚠️ Revérifie les cotes en direct avant de miser.")
