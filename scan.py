@@ -190,8 +190,13 @@ def fmt_arb(ev, arb, margin, names_by_role, eurusd):
         else:
             age = age_txt(leg.changed)
             lines.append(f"• {leg.label} → miser {stake:.2f} €" + (f" ({age})" if age else ""))
-    lines.append(f"Total misé : 100 € → tu encaisses ≈ {payout:.2f} € quel que soit le résultat "
-                 f"(gain ≈ +{payout-total:.2f} €{', change inclus' if arb.mixed else ''}).")
+    net = total * margin                # gain après le coût estimé du change (margin l'inclut déjà)
+    if arb.mixed:
+        lines.append(f"Total misé : 100 € → tu encaisses ≈ {payout:.2f} € quel que soit le résultat, "
+                     f"soit un gain ≈ +{net:.2f} € après frais de change.")
+    else:
+        lines.append(f"Total misé : 100 € → tu encaisses ≈ {payout:.2f} € quel que soit le résultat "
+                     f"(gain ≈ +{net:.2f} €).")
     if ev["sport"] == "tennis":
         lines.append("⚠️ Règles d'abandon différentes selon les sites : vérifie avant.")
     lines.append("⚠️ Revérifie les cotes en direct avant de miser.")
