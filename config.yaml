@@ -10,11 +10,11 @@ oddspapi:
     # Quota gratuit = 1 bookmaker par requête : le scanner tourne d'un bookmaker à l'autre.
     # Pour en (dés)activer un, ajouter/retirer le # devant sa ligne.
     bet365: "bet365"          # compte Malte
-    unibet: "unibet.fr"       # compte FR
-    winamax: "winamax.fr"     # compte FR
+    # unibet: "unibet.fr"     # compte FR
+    # winamax: "winamax.fr"   # compte FR
     # pokerstars: "pokerstars.fr"  # compte FR
-  # Bookmakers utilisés seulement pour les ARBITRAGES (pas d'alertes value)
-  arb_only: [unibet, winamax]
+  # Bookmakers utilisés seulement pour les ARBITRAGES (pas d'alertes value), ex. [unibet, winamax]
+  arb_only: []
 
 kalshi:
   base_url: "https://api.elections.kalshi.com/trade-api/v2"
