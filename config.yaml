@@ -26,6 +26,7 @@ kalshi:
 
 thresholds:
   min_arb_margin: 0.005   # arbitrage : profit garanti mini (0,5 %)
+  value_alerts: false     # alertes "value" désactivées (arbitrage seulement)
   min_value_ev: 0.03      # value : espérance mini (3 %)
   max_value_odds: 8.0     # pas de value sur les cotes > 8 (trop sensibles au moindre centime)
   fx_cost: 0.01           # coût estimé du change USD/EUR quand on mélange Kalshi et un bookmaker

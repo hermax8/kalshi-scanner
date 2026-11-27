@@ -177,7 +177,7 @@ def age_txt(iso: str) -> str:
     return f"⚠️ cote inchangée depuis {mins // 1440} jours"
 
 
-def fmt_arb(ev, arb, margin, names_by_role, eurusd):
+def fmt_arb(ev, arb, margin, names_by_role, eurusd, book_odds=None):
     lines = [f"🟢 <b>ARBITRAGE +{margin*100:.1f} %</b> ({SPORT_FR[ev['sport']]})",
              f"{ev['title']} · {ev['date']:%d/%m}" if ev["date"] else ev["title"]]
     total = 100.0                       # mise totale visée, en €
@@ -199,6 +199,10 @@ def fmt_arb(ev, arb, margin, names_by_role, eurusd):
                      f"(gain ≈ +{net:.2f} €).")
     if ev["sport"] == "tennis":
         lines.append("⚠️ Règles d'abandon différentes selon les sites : vérifie avant.")
+    # Toutes les cotes du bookmaker pour ce match, pour vérifier d'un coup d'œil dans l'appli
+    for slug, od in (book_odds or {}).items():
+        order = [r for r in ("home", "p1", "draw", "away", "p2") if r in od]
+        lines.append(f"Cotes {slug} reçues : " + " / ".join(f"{names_by_role.get(r, r)} {od[r]:.2f}" for r in order))
     lines.append("⚠️ Revérifie les cotes en direct avant de miser.")
     return "\n".join(lines)
 
@@ -318,10 +322,10 @@ def main(dry_run: bool = False):
                 rows.append([now_iso(), kind, ev["sport"], ev["title"], legs_txt, f"{margin:.4f}"])
                 sig = f"{kind}|{ev['ticker']}|" + "|".join(sorted(f"{l.source}:{sorted(l.covers)}" for l in arb.legs))
                 if should_alert(state, sig, margin, th["realert_hours"]):
-                    alerts.append(fmt_arb(ev, arb, margin, names_by_role, eurusd))
+                    alerts.append(fmt_arb(ev, arb, margin, names_by_role, eurusd, book_odds))
 
         fair = fair_probs(mids) if mids else None
-        if fair and book_odds:
+        if fair and book_odds and cfg["thresholds"].get("value_alerts", True):
             for vb in value_bets(fair, book_odds, -1.0)[:1]:
                 if vb["ev"] > log.get("best_value", {}).get("ev", -9):
                     log["best_value"] = {"match": ev["title"], "ev": round(vb["ev"], 4),
