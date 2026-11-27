@@ -3,3 +3,6 @@ time_utc,type,sport,match,details,margin_or_ev
 2026-11-24T14:52:58Z,value,soccer,Real Betis vs Vallecano,bet365 Vallecano @ 6.25 (juste 5.56),0.1250
 2026-11-27T13:58:32Z,arb,soccer,Arsenal vs Real Madrid,Kalshi NON « Real Madrid » à 0.61 $ | bet365 « Real Madrid » @ 3.20,0.0548
 2026-11-27T13:58:32Z,value,soccer,Arsenal vs Real Madrid,bet365 Real Madrid @ 3.20 (juste 2.51),0.2768
+2026-11-27T19:01:01Z,value,basketball,Memphis vs Minnesota,bet365 Memphis @ 2.51 (juste 2.41),0.0416
+2026-11-27T19:01:01Z,arb,basketball,Golden State vs Portland,Kalshi OUI « Portland » à 0.73 $ | bet365 « Golden State » @ 4.25,0.0114
+2026-11-27T19:01:01Z,value,basketball,Golden State vs Portland,bet365 Golden State @ 4.25 (juste 3.69),0.1533

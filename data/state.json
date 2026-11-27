@@ -1,7 +1,7 @@
 {
  "oddspapi": {
   "month": "2026-11",
-  "used": 18
+  "used": 19
  },
  "alerts": {
   "arb|KXUCLGAME-26DEC09ARSRMA|bet365:['away']|kalshi:['draw', 'home']": [
@@ -11,7 +11,19 @@
   "value|KXUCLGAME-26DEC09ARSRMA|bet365|away": [
    1795787912.4030817,
    0.27684729064039404
+  ],
+  "value|KXNBAGAME-26NOV27MEMMIN|bet365|p2": [
+   1795806061.3779492,
+   0.041649999999999965
+  ],
+  "arb|KXNBAGAME-26NOV27GSWPOR|bet365:['p2']|kalshi:['p1']": [
+   1795806061.3816302,
+   0.011355399896987537
+  ],
+  "value|KXNBAGAME-26NOV27GSWPOR|bet365|p2": [
+   1795806061.3816843,
+   0.1532663316582914
   ]
  },
- "rotation": 3
+ "rotation": 2
 }

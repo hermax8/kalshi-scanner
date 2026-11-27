@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-27T15:01:01Z",
+  "time": "2026-11-27T19:00:59Z",
   "kalshi_series": {
     "KXEPLGAME": 30,
     "KXUCLGAME": 18,
@@ -14,67 +14,75 @@
   },
   "errors": [],
   "unmatched": [
-    "Aston Villa vs Crystal Palace (2026-12-05) ≠ Villarreal CF vs Real Sociedad San Sebastian",
-    "Tottenham vs Arsenal (2026-12-06) ≠ FC Barcelona vs RC Celta de Vigo",
-    "Aston Villa vs PSG (2026-12-08) ≠ Sevilla FC vs Malaga CF",
-    "FC Köln vs Elversberg (2026-11-28) ≠ 1. FC Cologne vs SV 07 Elversberg",
-    "Augsburg vs FC Köln (2026-12-05) ≠ FC Augsburg vs 1. FC Cologne"
+    "New Orleans vs Los Angeles C (2026-11-27) ≠ San Antonio Spurs vs Los Angeles Lakers / LA Clippers vs New Orleans Pelicans",
+    "Brooklyn vs Charlotte (2026-11-28) ≠ Toronto Raptors vs Brooklyn Nets",
+    "Indiana vs Chicago (2026-11-28) ≠ Indiana Pacers vs Philadelphia 76ers",
+    "Oklahoma City vs Milwaukee (2026-11-28) ≠ Detroit Pistons vs Milwaukee Bucks",
+    "Philadelphia vs Houston (2026-11-28) ≠ Indiana Pacers vs Philadelphia 76ers",
+    "Miami vs Cleveland (2026-11-29) ≠ New York Knicks vs Miami Heat",
+    "Boston vs San Antonio (2026-11-29) ≠ Boston Celtics vs Atlanta Hawks / San Antonio Spurs vs Los Angeles Lakers",
+    "Los Angeles L vs Memphis (2026-11-29) ≠ Minnesota Timberwolves vs Memphis Grizzlies / San Antonio Spurs vs Los Angeles Lakers",
+    "Phoenix vs Utah (2026-11-29) ≠ Phoenix Suns vs Dallas Mavericks / Utah Jazz vs Denver Nuggets",
+    "Atlanta vs New York (2026-11-29) ≠ New York Knicks vs Miami Heat / Boston Celtics vs Atlanta Hawks",
+    "Denver vs Toronto (2026-11-29) ≠ Toronto Raptors vs Brooklyn Nets / Utah Jazz vs Denver Nuggets",
+    "New Orleans vs Portland (2026-11-29) ≠ LA Clippers vs New Orleans Pelicans / Portland Trail Blazers vs Golden State Warriors",
+    "Orlando vs Detroit (2026-11-29) ≠ Detroit Pistons vs Milwaukee Bucks",
+    "Los Angeles C vs Golden State (2026-11-29) ≠ San Antonio Spurs vs Los Angeles Lakers / Portland Trail Blazers vs Golden State Warriors",
+    "Minnesota vs Sacramento (2026-11-29) ≠ Minnesota Timberwolves vs Memphis Grizzlies"
   ],
-  "matched": 78,
-  "fixtures": 80,
-  "opportunities": 0,
+  "matched": 28,
+  "fixtures": 34,
+  "opportunities": 3,
   "kalshi_events": 167,
-  "bookmaker_this_run": "unibet",
+  "bookmaker_this_run": "bet365",
   "tournaments_this_run": [
-    "17",
-    "7",
-    "8",
-    "23",
-    "35"
+    "34",
+    "132",
+    "138"
   ],
   "fixture_sample": {
-    "fixtureId": "id1000003572513342",
-    "participant1Id": 2534,
-    "participant2Id": 2527,
+    "fixtureId": "id1000003472036314",
+    "participant1Id": 1715,
+    "participant2Id": 6070,
     "sportId": 10,
-    "tournamentId": 35,
-    "seasonId": 140768,
+    "tournamentId": 34,
+    "seasonId": 140780,
     "statusId": 0,
     "hasOdds": true,
-    "startTime": "2026-11-27T19:30:00.000Z",
+    "startTime": "2026-11-27T19:45:00.000Z",
     "trueStartTime": null,
     "trueEndTime": null,
-    "updatedAt": "2026-11-24T23:50:38.160Z",
+    "updatedAt": "2026-11-24T23:50:38.102Z",
     "_books": [
-      "unibet.fr"
+      "bet365"
     ],
     "_markets": [
-      "10258",
-      "102526",
-      "1010",
-      "10308",
-      "10270",
-      "10296",
-      "10226",
-      "101930",
-      "108",
-      "10140"
+      "10260",
+      "102191",
+      "102238",
+      "1020",
+      "10224",
+      "10272",
+      "101902",
+      "102095",
+      "10211",
+      "102220"
     ]
   },
-  "oddspapi_used_this_month": 18,
+  "oddspapi_used_this_month": 19,
   "best_arb": {
-    "match": "Bayern Munich vs Paderborn",
-    "margin": -0.0158,
+    "match": "Golden State vs Portland",
+    "margin": 0.0114,
     "legs": [
-      "Kalshi NON « Paderborn » à 0.96 $",
-      "Kalshi OUI « Paderborn » à 0.05 $"
+      "Kalshi OUI « Portland » à 0.73 $",
+      "bet365 « Golden State » @ 4.25"
     ]
   },
   "best_value": {
-    "match": "Nottingham Forest vs Chelsea",
-    "ev": -0.0327,
-    "bet": "unibet.fr Nul @ 3.50",
-    "fair_odds": 3.62
+    "match": "Golden State vs Portland",
+    "ev": 0.1533,
+    "bet": "bet365 Golden State @ 4.25",
+    "fair_odds": 3.69
   },
-  "sans_cotes": 29
+  "sans_cotes": 12
 }
