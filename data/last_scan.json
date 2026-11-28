@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-28T07:01:01Z",
+  "time": "2026-11-28T11:00:59Z",
   "kalshi_series": {
     "KXEPLGAME": 33,
     "KXUCLGAME": 18,
@@ -14,63 +14,58 @@
   },
   "errors": [],
   "unmatched": [
-    "Aston Villa vs Crystal Palace (2026-12-05) ≠ Villarreal CF vs Real Sociedad San Sebastian",
-    "Tottenham vs Arsenal (2026-12-06) ≠ FC Barcelona vs RC Celta de Vigo",
-    "Aston Villa vs PSG (2026-12-08) ≠ Sevilla FC vs Malaga CF",
-    "Manchester United vs Leipzig (2026-12-08) ≠ FC Barcelona vs Manchester City",
-    "Vallecano vs Bilbao (2026-12-09) ≠ PSV Eindhoven vs Atletico Madrid",
-    "FC Köln vs Elversberg (2026-11-28) ≠ 1. FC Cologne vs SV 07 Elversberg",
-    "Augsburg vs FC Köln (2026-12-05) ≠ FC Augsburg vs 1. FC Cologne"
+    "Orlando vs Detroit (2026-11-29) ≠ Washington Wizards vs Orlando Magic",
+    "Los Angeles L vs Houston (2026-11-30) ≠ Houston Rockets vs Philadelphia 76ers",
+    "Oklahoma City vs Brooklyn (2026-11-30) ≠ Milwaukee Bucks vs Oklahoma City Thunder",
+    "San Antonio vs Milwaukee (2026-11-30) ≠ Milwaukee Bucks vs Oklahoma City Thunder"
   ],
-  "matched": 79,
-  "fixtures": 81,
+  "matched": 22,
+  "fixtures": 27,
   "opportunities": 0,
   "kalshi_events": 177,
   "bookmaker_this_run": "bet365",
   "tournaments_this_run": [
-    "17",
-    "7",
-    "8",
-    "23",
-    "35"
+    "34",
+    "132",
+    "138"
   ],
   "fixture_sample": {
-    "fixtureId": "id1000000872478726",
-    "participant1Id": 2816,
-    "participant2Id": 2818,
+    "fixtureId": "id1000003472036310",
+    "participant1Id": 1684,
+    "participant2Id": 1648,
     "sportId": 10,
-    "tournamentId": 8,
-    "seasonId": 142176,
+    "tournamentId": 34,
+    "seasonId": 140780,
     "statusId": 0,
     "hasOdds": true,
-    "startTime": "2026-11-28T13:00:00.000Z",
+    "startTime": "2026-11-28T16:15:00.000Z",
     "trueStartTime": null,
     "trueEndTime": null,
-    "updatedAt": "2026-11-25T23:18:01.251Z",
+    "updatedAt": "2026-11-25T23:18:07.521Z",
     "_books": [
       "bet365"
     ],
     "_markets": [
-      "108",
-      "102242",
-      "10280",
-      "102116",
-      "1010",
+      "102095",
+      "101756",
+      "10811",
       "102131",
-      "10232",
-      "10244",
-      "10276",
-      "102248"
+      "108",
+      "106359",
+      "101697",
+      "102210",
+      "101512",
+      "107855"
     ]
   },
-  "oddspapi_used_this_month": 22,
+  "oddspapi_used_this_month": 23,
   "best_arb": {
-    "match": "Bayern Munich vs Paderborn",
-    "margin": -0.0145,
+    "match": "PSG vs Lorient",
+    "margin": -0.0205,
     "legs": [
-      "Kalshi NON « Paderborn » à 0.97 $",
-      "Kalshi OUI « Paderborn » à 0.04 $"
+      "Kalshi NON « Lorient » à 0.94 $",
+      "bet365 « Lorient » @ 15.00"
     ]
   },
-  "sans_cotes": 38
+  "sans_cotes": 27
 }
