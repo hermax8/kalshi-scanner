@@ -1,12 +1,12 @@
 {
-  "time": "2026-11-28T15:00:58Z",
+  "time": "2026-11-28T19:00:59Z",
   "kalshi_series": {
-    "KXEPLGAME": 33,
+    "KXEPLGAME": 31,
     "KXUCLGAME": 18,
-    "KXLALIGAGAME": 27,
-    "KXSERIEAGAME": 23,
-    "KXBUNDESLIGAGAME": 23,
-    "KXLIGUE1GAME": 22,
+    "KXLALIGAGAME": 25,
+    "KXSERIEAGAME": 21,
+    "KXBUNDESLIGAGAME": 19,
+    "KXLIGUE1GAME": 21,
     "KXATPMATCH": 0,
     "KXWTAMATCH": 0,
     "KXNBAGAME": 31,
@@ -14,68 +14,58 @@
   },
   "errors": [],
   "unmatched": [
-    "Leeds United vs Coventry (2026-11-28) ≠ Brighton & Hove Albion vs Newcastle United",
-    "Manchester United vs Brentford (2026-11-28) ≠ Brighton & Hove Albion vs Newcastle United / Arsenal FC vs Manchester City",
-    "Aston Villa vs Crystal Palace (2026-12-05) ≠ Villarreal CF vs Real Sociedad San Sebastian",
-    "Tottenham vs Arsenal (2026-12-06) ≠ FC Barcelona vs RC Celta de Vigo",
-    "Aston Villa vs PSG (2026-12-08) ≠ Sevilla FC vs Malaga CF",
-    "Manchester United vs Leipzig (2026-12-08) ≠ FC Barcelona vs Manchester City",
-    "Real Betis vs Vallecano (2026-11-28) ≠ Valencia CF vs CA Osasuna",
-    "Vallecano vs Bilbao (2026-12-09) ≠ PSV Eindhoven vs Atletico Madrid",
-    "Frosinone vs Parma Calcio (2026-11-28) ≠ AS Roma vs AC Monza",
-    "Hamburg vs Bayern Munich (2026-11-28) ≠ TSG Hoffenheim vs FC Augsburg",
-    "Mainz vs Union Berlin (2026-11-28) ≠ AS Roma vs AC Monza",
-    "Augsburg vs FC Köln (2026-12-05) ≠ FC Augsburg vs 1. FC Cologne"
+    "Orlando vs Detroit (2026-11-29) ≠ Washington Wizards vs Orlando Magic",
+    "Los Angeles L vs Houston (2026-11-30) ≠ Houston Rockets vs Philadelphia 76ers",
+    "Oklahoma City vs Brooklyn (2026-11-30) ≠ Milwaukee Bucks vs Oklahoma City Thunder",
+    "San Antonio vs Milwaukee (2026-11-30) ≠ Milwaukee Bucks vs Oklahoma City Thunder"
   ],
-  "matched": 73,
-  "fixtures": 74,
-  "opportunities": 0,
-  "kalshi_events": 177,
+  "matched": 21,
+  "fixtures": 26,
+  "opportunities": 1,
+  "kalshi_events": 166,
   "bookmaker_this_run": "bet365",
   "tournaments_this_run": [
-    "17",
-    "7",
-    "8",
-    "23",
-    "35"
+    "34",
+    "132",
+    "138"
   ],
   "fixture_sample": {
-    "fixtureId": "id1000000872478738",
-    "participant1Id": 2830,
-    "participant2Id": 2825,
+    "fixtureId": "id1000003472036316",
+    "participant1Id": 1662,
+    "participant2Id": 1659,
     "sportId": 10,
-    "tournamentId": 8,
-    "seasonId": 142176,
+    "tournamentId": 34,
+    "seasonId": 140780,
     "statusId": 0,
     "hasOdds": true,
-    "startTime": "2026-11-28T15:15:00.000Z",
+    "startTime": "2026-11-28T19:45:00.000Z",
     "trueStartTime": null,
     "trueEndTime": null,
-    "updatedAt": "2026-11-25T23:18:01.692Z",
+    "updatedAt": "2026-11-25T23:18:08.635Z",
     "_books": [
       "bet365"
     ],
     "_markets": [
-      "102256",
-      "10276",
-      "101886",
-      "102176",
-      "10771",
-      "102116",
-      "10270",
-      "10278",
-      "101826",
-      "1014"
+      "10242",
+      "10823",
+      "106157",
+      "101689",
+      "10926",
+      "101878",
+      "106153",
+      "101074",
+      "102210",
+      "102250"
     ]
   },
-  "oddspapi_used_this_month": 24,
+  "oddspapi_used_this_month": 25,
   "best_arb": {
-    "match": "Bayern Munich vs Paderborn",
-    "margin": -0.0145,
+    "match": "Indiana vs Chicago",
+    "margin": 0.0136,
     "legs": [
-      "Kalshi NON « Paderborn » à 0.97 $",
-      "Kalshi OUI « Paderborn » à 0.04 $"
+      "Kalshi OUI « Chicago » à 0.49 $",
+      "bet365 « Indiana » @ 2.13"
     ]
   },
-  "sans_cotes": 39
+  "sans_cotes": 27
 }
