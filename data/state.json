@@ -1,7 +1,7 @@
 {
  "oddspapi": {
   "month": "2026-11",
-  "used": 21
+  "used": 22
  },
  "alerts": {
   "arb|KXUCLGAME-26DEC09ARSRMA|bet365:['away']|kalshi:['draw', 'home']": [
@@ -25,5 +25,5 @@
    0.1532663316582914
   ]
  },
- "rotation": 2
+ "rotation": 1
 }
